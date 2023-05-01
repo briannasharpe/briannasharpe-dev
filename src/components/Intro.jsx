@@ -1,10 +1,10 @@
-// import classes from './Intro.module.scss';
+import classes from './Intro.module.scss';
 // import React from 'react';
 
 function Intro() {
   return(
     <>
-      Intro
+      <section id="intro" className={classes.intro}>Intro</section>
     </>
   );
 }

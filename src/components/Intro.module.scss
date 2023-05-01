@@ -1,0 +1,7 @@
+@use '../assets/variables' as var;
+
+.intro  {
+  background-color: green;
+  width: 100%;
+  height: var.$section-height;
+}

@@ -1,10 +1,11 @@
-// import classes from './About.module.scss';
+import classes from './About.module.scss';
 // import React from 'react';
 
 function About() {
   return(
     <>
-      About
+      <section id="about" className={classes.about}>About</section>
+      {/* <section id="about" className={[classes.about, classes['about-container'], classes['navbar-anchor']].join(' ')}>About</section> */}
     </>
   );
 }

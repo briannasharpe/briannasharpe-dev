@@ -1,9 +1,9 @@
-// import classes from './Contact.module.scss';
+import classes from './Contact.module.scss';
 
 function Contact() {
   return(
     <>
-      Contact
+      <section id="contact" className={classes.contact}>Contact</section>
     </>
   );
 }

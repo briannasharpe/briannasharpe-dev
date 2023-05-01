@@ -1,0 +1,18 @@
+@use '../assets/variables' as var;
+
+// .about-container {
+//   position: relative;
+// }
+
+// .navbar-anchor {
+//   position: absolute;
+//   bottom: calc(var.$navbar-height * -1);
+//   left: 0;
+// }
+
+.about {
+  background-color: red;
+  width: 100%;
+  height: var.$section-height;
+  padding-top: var.$navbar-height;
+}

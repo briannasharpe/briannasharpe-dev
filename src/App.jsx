@@ -11,15 +11,15 @@ import Contact from './components/Contact';
 function App() {
   return (
     <>
-    <BrowserRouter>
-    <NavBar />
-  
-    <Intro />
-    <About />
-    <Projects />
-    <Contact />
-    
-    </BrowserRouter>
+      <BrowserRouter>
+        <NavBar />
+        <Intro />
+        <About />
+        <Projects />
+        <Contact />
+      
+      </BrowserRouter>
+
     </>
   )
 }

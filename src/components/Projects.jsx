@@ -1,9 +1,9 @@
-// import classes from './Projects.module.scss';
+import classes from './Projects.module.scss';
 
 function Projects() {
   return(
     <>
-      Projects
+      <section id="projects" className={classes.projects}>Projects</section>
     </>
   );
 }
