@@ -1,13 +1,37 @@
 @use '../assets/variables' as var;
 
 .project-container {
-//   background-color: purple;
-//   width: 100%;
-//   height: var.$section-height;
-//   padding-top: var.$navbar-height;
+  border: 1px solid black;
+  max-width: var.$div-size;
+  display: flex;
+  flex-direction: column;
+  
+  img {
+    width: 10px;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+  }
+}
+
+.project-image {
+  display: flex;
+  justify-content: center;
+}
+
+.project-info {
+
 }
 
 .project-button-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
 
   a {
     display: inline-flex;
