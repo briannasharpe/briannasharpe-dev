@@ -17,11 +17,9 @@ function App() {
         <About />
         <Projects />
         <Contact />
-      
       </BrowserRouter>
-
     </>
-  )
+  );
 }
 
 export default App

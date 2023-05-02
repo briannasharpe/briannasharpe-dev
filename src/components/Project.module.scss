@@ -1,0 +1,20 @@
+@use '../assets/variables' as var;
+
+.project-container {
+//   background-color: purple;
+//   width: 100%;
+//   height: var.$section-height;
+//   padding-top: var.$navbar-height;
+}
+
+.project-button-container {
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    border: solid 1px black;
+    padding: 2px;
+    border-radius: 5px;
+    }
+}

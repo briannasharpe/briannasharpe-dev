@@ -1,0 +1,9 @@
+@use '../../assets/variables' as var;
+
+// svg {
+//   width: var.$project-icon;
+// }
+
+.icon svg {
+  width: var.$project-icon;
+}

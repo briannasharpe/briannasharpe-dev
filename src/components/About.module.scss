@@ -1,18 +1,23 @@
 @use '../assets/variables' as var;
 
-// .about-container {
-//   position: relative;
-// }
-
-// .navbar-anchor {
-//   position: absolute;
-//   bottom: calc(var.$navbar-height * -1);
-//   left: 0;
-// }
-
-.about {
+.about-container {
   background-color: red;
   width: 100%;
   height: var.$section-height;
   padding-top: var.$navbar-height;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // gap: 10px;
+}
+
+.about-pic {
+  background-color: green;
+  width: 20rem;
+}
+
+.about-text {
+  background-color: aqua;
+  max-width: 20rem;
+  max-height: 20rem;
 }

@@ -1,8 +1,12 @@
 @use '../assets/variables' as var;
 
-.projects {
+.projects-container {
   background-color: purple;
   width: 100%;
   height: var.$section-height;
   padding-top: var.$navbar-height;
+}
+
+.projects-header {
+  
 }
