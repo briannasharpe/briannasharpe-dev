@@ -1,4 +1,5 @@
-import Project from './Project';
+import Project from '../modules/Project';
+import { projectData } from '../constants';
 
 function Projects() {
   return(
@@ -8,7 +9,16 @@ function Projects() {
         <h1>Projects</h1>
       </div>
       <div className="projects-content">
-        <Project />
+        {projectData.map((project) => (
+          <Project 
+            key={project.id}
+            img={project.image} 
+            name={project.name}
+            description={project.description}
+            code={project.code}
+            demo={project.demo}
+          />
+        ))}
 
       </div>
     </section>

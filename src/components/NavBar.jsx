@@ -17,8 +17,8 @@ function NavBar() {
       <nav className="navbar-container">
         <div className="navbar-items">
           <div className="navbar-logo">
-            <HashLink smooth
-              to="/"
+            <Link 
+            smooth to="/"
               // className={classes['navbar-logo']}
               onClick = {() => {
                 setActive("");
@@ -30,7 +30,7 @@ function NavBar() {
               }}
             >
               <p>briannasharpe.</p>
-            </HashLink>
+            </Link>
           </div>
           <div className="navbar-links">
             {/* <ul>
