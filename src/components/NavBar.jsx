@@ -3,6 +3,7 @@ import { Link, NavLink, Route } from 'react-router-dom';
 import { HashLink, NavHashLink } from 'react-router-hash-link';
 
 import { navLinks } from '../constants';
+import ThemeToggle from '../modules/ThemeToggle';
 
 function NavBar() {
   const [active, setActive] = useState("");
@@ -29,7 +30,7 @@ function NavBar() {
                 })
               }}
             >
-              <p>briannasharpe.</p>
+              <p>briannasharpe<span>.</span></p>
             </Link>
           </div>
           <div className="navbar-links">
@@ -86,10 +87,12 @@ function NavBar() {
 
                 </span>
               ))}
-            <span className="theme">
+            {/* <span className="theme">
               <i className="fa-solid fa-moon"></i>
+            </span> */}
+            <span className="theme">
+              <ThemeToggle />
             </span>
-
 
             {/* <div className={classes['navbar-links-mobile']}>
               <FontAwesomeIcon icon="fa-solid fa-bars" />

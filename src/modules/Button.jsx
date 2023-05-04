@@ -8,7 +8,7 @@ function Button({ link, text, title, icon }) {
       <div className={classes.button}>
         <a href={link} title={title}>
           {text}
-          <i class={icon}></i>
+          <i className={icon}></i>
         </a>
       </div>
     </>

@@ -17,7 +17,7 @@ function About() {
               <Button 
                 link="/"
                 text="Resume"
-                title="resume link"
+                title="resume download link"
                 icon="fa-solid fa-download"
               />
             </div>

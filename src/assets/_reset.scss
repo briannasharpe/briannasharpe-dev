@@ -1,0 +1,15 @@
+@use './colors' as *;
+
+.light {
+  theme-background: $light-background;
+  background-accent: $light-background-accent;
+  primary-text: $light-primary-text;
+  secondary-text: $light-secondary-text;
+}
+
+.dark {
+  theme-background: $dark-background;
+  background-accent: $dark-background-accent;
+  primary-text: $dark-primary-text;
+  secondary-text: $dark-secondary-text;
+}
