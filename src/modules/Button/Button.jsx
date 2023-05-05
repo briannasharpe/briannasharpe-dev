@@ -1,5 +1,3 @@
-// import Project from './Project';
-// import { projectData } from '../constants';
 import classes from './Button.module.scss';
 
 function Button({ link, text, title, icon }) {

@@ -1,5 +1,5 @@
 import classes from './Project.module.scss';
-import Button from './Button';
+import Button from '../Button/Button';
 
 function Project({ img, name, description, code, demo }) {
   return(

@@ -1,17 +1,17 @@
-import React, { useState, useEffect } from 'react';
-import { Link, NavLink, Route } from 'react-router-dom';
-import { HashLink, NavHashLink } from 'react-router-hash-link';
+// import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import { NavHashLink } from 'react-router-hash-link';
 
 import { navLinks } from '../constants';
-import ThemeToggle from '../modules/ThemeToggle';
+import ThemeToggleButton from '../modules/ThemeToggleButton/ThemeToggleButton';
 
 function NavBar() {
-  const [active, setActive] = useState("");
+  // const [active, setActive] = useState("");
   // const [toggle, setToggle] = useState(false);
 
-  useEffect(() => {
-    window.scroll(0, 0);
-}, []);
+//   useEffect(() => {
+//     window.scroll(0, 0);
+// }, []);
 
   return(
     <>
@@ -22,7 +22,7 @@ function NavBar() {
             smooth to="/"
               // className={classes['navbar-logo']}
               onClick = {() => {
-                setActive("");
+                // setActive("");
                 // window.scrollTo(0, 0)
                 window.scrollTo({
                   top: 0,
@@ -30,13 +30,13 @@ function NavBar() {
                 })
               }}
             >
-              <p>briannasharpe<span>.</span></p>
+              <span>briannasharpe<span className="navbar-logo-dot">.</span></span>
             </Link>
           </div>
           <div className="navbar-links">
-            {/* <ul>
+            <ul>
               {navLinks.map((link) => (
-                <span
+                <li
                   key={link.id}
                   // className={classes.link}
                   // className={`${
@@ -44,36 +44,7 @@ function NavBar() {
                   //   ? "navbar-links-active"
                   //   : ""
                   // }`}
-                  onClick={() => setActive(link.title)}
-                > */}
-                  {/* <a href={`#${link.id}`}>{link.title}</a> */}
-
-                  {/* <NavHashLink 
-                    smooth to={`#${link.id}`} 
-                    // activeClassName={classes['navbar-links-active']} 
-                    // activestyle={{ color: 'red' }}
-                  >
-                    {link.title}
-                  </NavHashLink>
-
-                </span>
-              ))}
-              <span className={classes.theme}>
-                <FontAwesomeIcon icon={faMoon} />
-              </span>
-            </ul> */}
-
-            
-            {navLinks.map((link) => (
-                <span
-                  key={link.id}
-                  // className={classes.link}
-                  // className={`${
-                  //   active === link.title
-                  //   ? "navbar-links-active"
-                  //   : ""
-                  // }`}
-                  onClick={() => setActive(link.title)}
+                  // onClick={() => setActive(link.title)}
                 >
                   {/* <a href={`#${link.id}`}>{link.title}</a> */}
 
@@ -84,15 +55,12 @@ function NavBar() {
                   >
                     {link.title}
                   </NavHashLink>
-
-                </span>
+                </li>
               ))}
-            {/* <span className="theme">
-              <i className="fa-solid fa-moon"></i>
-            </span> */}
-            <span className="theme">
-              <ThemeToggle />
-            </span>
+              <li>
+                <ThemeToggleButton />
+              </li>
+            </ul>
 
             {/* <div className={classes['navbar-links-mobile']}>
               <FontAwesomeIcon icon="fa-solid fa-bars" />

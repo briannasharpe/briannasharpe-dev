@@ -1,0 +1,11 @@
+@use '../../assets/colors' as colors;
+
+.toggle {
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+
+  &:hover {
+    color: red;
+  }
+}

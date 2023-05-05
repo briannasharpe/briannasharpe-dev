@@ -18,7 +18,6 @@ function Intro() {
               <a href={introLinks[1].link} title={introLinks[1].id}>
                 <i className="fa-brands fa-linkedin"></i>
               </a>
-              
             </div>
           </div>
           <div className="intro-pic">
