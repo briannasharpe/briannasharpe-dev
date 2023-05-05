@@ -19,7 +19,7 @@ Minor
 - [ ] to top button
 
 Ideas
-♦ - [ ] technologies: switch from logos to text, on hover: pause animation → on hover, switch from logos to text
+ - [ ] technologies: switch from logos to text, on hover: pause animation → on hover, switch from logos to text
 
 ## Temp Files
 - `src\context\ThemeContext.jsx`
