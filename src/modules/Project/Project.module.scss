@@ -1,63 +1,58 @@
-@use '../../assets/variables' as var;
+@use '../../assets/abstracts/variables' as var;
+@use '../../assets/abstracts/colors' as colors;
+@use '../../assets/abstracts/mixins' as *;
 
-.project-container {
-  border: 1px solid black;
-  width: calc(var.$div-size * 0.7);
-  // height: 27.5rem;
-  display: flex;
-  flex-direction: column;
-  // padding: 1rem;
-  // padding-bottom: 1rem;
-  border-radius: var.$rounded;
-  background-color: var.$white;
-}
-
-.project-image {
-  display: flex;
-  justify-content: center;
-  height: 11.25rem;
-  overflow: hidden;
-  // object-fit: scale-down;
-  // box-sizing: border-box;
-  // border-radius: 20px;
-  border-radius: var.$rounded var.$rounded 0 0;
-
-  img {
-    width: 100%;
-    height: 100%;
-    // height: 2524px;
-    // height: 11.25rem;
-    // object-fit: contain;
-    object-fit: cover;
-    object-position: top center;
-    transition: all 10s ease-in-out;
-  }
-
-  &:hover img {
-    object-position: bottom center;
-  }
-}
-
-.project-info {
-  padding: 1rem 1rem 0 1rem;
-
-  h2 {
-    text-align: center;
-    padding-bottom: 0.3rem;
+.light {
+  .project-container {
+    width: calc(var.$div-size * 0.7);
+    display: flex;
+    flex-direction: column;
+    border-radius: var.$rounded;
+    background-color: colors.$light-background;
+    @include light-drop-shadow;
   }
   
-  p {
-    text-align: center;
-    overflow: scroll;
-    overflow-x: hidden;
-    height: 7.5rem;
+  .project-image {
+    display: flex;
+    justify-content: center;
+    height: 11.25rem;
+    overflow: hidden;
+    border-radius: var.$rounded var.$rounded 0 0;
+  
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top center;
+      transition: all 10s ease-in-out;
+    }
+  
+    &:hover img {
+      object-position: bottom center;
+    }
+  }
+  
+  .project-info {
+    padding: 1rem 1rem 0 1rem;
+  
+    h2 {
+      text-align: center;
+      padding-bottom: 0.3rem;
+    }
+    
+    p {
+      text-align: center;
+      overflow: scroll;
+      overflow-x: hidden;
+      height: 7.5rem;
+    }
+  }
+  
+  .project-button-container {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    padding: 1rem 0;
   }
 }
 
-.project-button-container {
-  display: flex;
-  justify-content: center;
-  gap: 0.5rem;
-  // padding: 0.3rem 0 1rem 0;
-  padding: 1rem 0;
-}

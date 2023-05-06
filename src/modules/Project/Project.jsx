@@ -1,9 +1,10 @@
 import classes from './Project.module.scss';
 import Button from '../Button/Button';
 
-function Project({ img, name, description, code, demo }) {
+function Project({ img, name, description, code, demo, currentTheme }) {
   return(
     <>
+    <div className={classes[`${currentTheme}`]}>
       <div className={classes['project-container']}>
         <div className={classes['project-image']}>
           <img src={img}></img>
@@ -27,6 +28,7 @@ function Project({ img, name, description, code, demo }) {
           />
         </div>
       </div>
+    </div>
     </>
   );
 }

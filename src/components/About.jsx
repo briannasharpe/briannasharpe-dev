@@ -1,7 +1,7 @@
 // import React from 'react';
 import Button from '../modules/Button/Button';
 
-function About() {
+function About({ currentTheme }) {
   return(
     <>
       <section id="about" className="about-container">
@@ -19,6 +19,7 @@ function About() {
                 text="Resume"
                 title="resume download link"
                 icon="fa-solid fa-download"
+                currentTheme={currentTheme}
               />
             </div>
           </div>

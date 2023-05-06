@@ -1,0 +1,73 @@
+@use './variables' as var;
+@use './colors' as colors;
+
+/* -------------------------------------------------------------------------- */
+/*                                   GENERAL                                  */
+/* -------------------------------------------------------------------------- */
+@mixin main-font {
+  font-family: 'Outfit', sans-serif;
+}
+
+@mixin sub-font {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+@mixin section-container {
+  width: 100%;
+  min-height: var.$section-height;
+  padding-top: var.$navbar-height;
+}
+
+@mixin gap {
+  display: flex;
+  gap: var.$gap;
+}
+
+@mixin container-header {
+  // font-size: 3rem;
+  // padding-bottom: 1rem;
+  h1 {
+    font-size: var.$header-font-size;
+    // padding-bottom: 1rem;
+    padding: 1rem 0;
+  }
+}
+
+@mixin button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: var.$rounded-bar;
+  text-decoration: none;
+  background-color: colors.$red-accent;
+  font-weight: 700;
+  font-size: var.$subtext-font-size;
+  color: colors.$white;
+    
+  &:link {
+    color: colors.$white;
+  }
+  &:visited {
+    color: colors.$white;
+  }
+  &:hover {
+    color: colors.$white;
+    animation: pop 0.5s ease;
+  }
+}
+
+/* -------------------------------------------------------------------------- */
+/*                               THEME SPECIFIC                               */
+/* -------------------------------------------------------------------------- */
+
+/* ------------------------------- LIGHT MODE ------------------------------- */
+@mixin light-drop-shadow {
+  filter: drop-shadow(0 0 0.3rem colors.$light-background-accent);
+}
+
+/* -------------------------------- DARK MODE ------------------------------- */
+@mixin dark-drop-shadow {
+  filter: drop-shadow(0 0 0.3rem colors.$dark-background-accent);
+}

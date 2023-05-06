@@ -5,7 +5,7 @@ import { NavHashLink } from 'react-router-hash-link';
 import { navLinks } from '../constants';
 import ThemeToggleButton from '../modules/ThemeToggleButton/ThemeToggleButton';
 
-function NavBar() {
+function NavBar({ currentTheme, changeTheme }) {
   // const [active, setActive] = useState("");
   // const [toggle, setToggle] = useState(false);
 
@@ -58,7 +58,7 @@ function NavBar() {
                 </li>
               ))}
               <li>
-                <ThemeToggleButton />
+                <ThemeToggleButton currentTheme={currentTheme} changeTheme={changeTheme}/>
               </li>
             </ul>
 

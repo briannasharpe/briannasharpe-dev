@@ -3,10 +3,14 @@
 
 ## To-do:
 Major
- - [ ] dark/light mode
+ - [x] dark/light mode
 	 - [x] color palette
+	 - [ ] save theme on refresh
+	 - [ ] transfer styles to dark mode
  - [ ] mobile view
- - [ ] contact section
+ - [x] contact section
+   - [ ] backend for form data
+	 - [ ] different style
  - [ ] navbar active class
  - [ ] scrollbar
  
@@ -16,7 +20,7 @@ Minor
 	 - [ ] description sizing
 	 - [ ] format (landscape view?)
  - [ ] intro location hover: date and time
-- [ ] to top button
+ - [ ] to top button
 
 Ideas
  - [ ] technologies: switch from logos to text, on hover: pause animation → on hover, switch from logos to text

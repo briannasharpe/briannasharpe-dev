@@ -1,7 +1,7 @@
 import Project from '../modules/Project/Project';
 import { projectData } from '../constants';
 
-function Projects() {
+function Projects({ currentTheme }) {
   return(
     <>
       <section id="projects" className="projects-container">
@@ -17,6 +17,7 @@ function Projects() {
               description={project.description}
               code={project.code}
               demo={project.demo}
+              currentTheme={currentTheme}
             />
           ))}
         </div>

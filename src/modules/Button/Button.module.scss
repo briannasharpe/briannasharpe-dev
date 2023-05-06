@@ -1,22 +1,7 @@
-@use '../../assets/variables' as var;
+@use '../../assets/abstracts/variables' as var;
+@use '../../assets/abstracts/colors' as colors;
+@use '../../assets/abstracts/mixins' as *;
 
 .button a {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.3rem;
-  border: solid 1px black;
-  padding: 0.2rem 0.5rem;
-  border-radius: 5px;
-  text-decoration: none;
-  background-color: var.$accent;
-
-    &:link {
-      color: inherit;
-    }
-    &:visited {
-      color: inherit;
-    }
-    &:hover {
-      color: var.$white;
-    }
+  @include button;
 }
