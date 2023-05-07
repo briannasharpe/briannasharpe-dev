@@ -39,9 +39,9 @@ function App() {
               }}
             />
             <Intro />
-            <About currentTheme={theme} />
+            <About />
             <Projects currentTheme={theme} />
-            <Contact currentTheme={theme} />
+            <Contact />
           </div>
         {/* </ThemeProvider> */}
       </BrowserRouter>

@@ -3,6 +3,7 @@
 /* -------------------------------------------------------------------------- */
 
 $white: #fafaff;
+$black: #05042f;
 
 /* --------------------------------- ACCENTS -------------------------------- */
 $red-accent: #ff4c60;
@@ -11,8 +12,8 @@ $yellow-accent: #ffe160;
 /* ------------------------------- LIGHT MODE ------------------------------- */
 $light-background: $white;
 $light-background-accent: #e9e7fc;
-$light-primary-text: #05042f;
-$light-secondary-text: #05042f;
+$light-primary-text: $black;
+$light-secondary-text: $black;
 
 /* -------------------------------- DARK MODE ------------------------------- */
 $dark-background: #2e2d52;

@@ -1,0 +1,379 @@
+@use '../abstracts/variables' as var;
+@use '../abstracts/colors' as colors;
+@use '../abstracts/mixins' as *;
+
+.dark {
+  color: colors.$dark-primary-text;
+
+  /* -------------------------------------------------------------------------- */
+  /*                                   NAVBAR                                   */
+  /* -------------------------------------------------------------------------- */
+  .navbar-container {
+    background-color: colors.$dark-background;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: var.$navbar-height;
+    display: flex;
+    align-items: center;
+    border-bottom: 0.1rem solid colors.$dark-background-accent;
+    @include dark-drop-shadow;
+    z-index: 100;
+
+    .navbar-items {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      padding: 0 2rem;
+      font-weight: 700;
+    }
+    
+    .navbar-logo {
+      font-weight: 800;
+      font-size: 1.6rem;
+      letter-spacing: 0rem;
+    
+      a {
+        text-decoration: none;
+    
+        &:link {
+          color: colors.$dark-primary-text;
+        }
+    
+        &:visited {
+          color: colors.$dark-primary-text;
+        }
+      }
+    
+      // p {
+      //   span {
+      //     color: colors.$red-accent;
+      //     font-size: 2rem;
+      //   }
+      // }
+    }
+    
+    .navbar-logo-dot {
+      color: colors.$red-accent;
+      font-size: 2rem;
+    }
+    
+    .navbar-links {
+      color: colors.$dark-primary-text;
+      font-size: var.$default-font-size;
+      
+      // for div
+      a {
+        margin-right: 2rem;
+        // float: left;
+        text-decoration: none;
+        text-transform: capitalize;
+    
+        &:link {
+          color: colors.$dark-primary-text;
+        }
+    
+        &:visited {
+          color: colors.$dark-primary-text;
+        }
+          
+        &:hover {
+          color: colors.$red-accent;
+        }
+      }
+    
+      ul {
+        list-style: none;
+      }
+    
+      
+      li {
+        //   // display: inline;
+        float: left;
+        
+      //   // a {
+      //   //   text-decoration: none;
+      //   //   text-transform: capitalize;
+    
+      //   //   &:visited {
+      //   //     color: inherit;
+      //   //   }
+          
+      //   //   &:hover {
+      //   //     color: blue;
+      //   //   }
+          
+      //   //   &:active {
+      //   //     color: green;
+      //   //   }
+      //   // }
+      }
+    
+    }
+    
+    // .navbar-links-active {
+    //   color: green; 
+    // }
+    
+    // .navbar-links-inactive {
+    //   color: white;
+    // }
+    
+    .navbar-links-mobile {
+    
+    }
+    
+    .theme {
+      // display: flex;
+      // border-radius: 5px;
+      // margin-left: 2rem;
+      // padding-left: 1px;
+      // margin-right: 2rem;
+    
+    }
+  }
+  /* --------------------------------- NAVBAR --------------------------------- */
+  
+
+  /* -------------------------------------------------------------------------- */
+  /*                                    INTRO                                   */
+  /* -------------------------------------------------------------------------- */
+  .intro-container {
+    @include section-container;
+    background-color: colors.$dark-background;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .intro-content {
+      @include gap;
+      padding: 1rem;
+    }
+    
+    .intro-text {
+      // background-color: aqua;
+      max-width: var.$div-size;
+      // max-height: var.$div-size;
+    
+      h1 {
+        font-size: 4rem;
+      }
+    
+      p {
+        padding: 1rem 0;
+      }
+    }
+    
+    .intro-links {
+      @include icon-link;
+      // font-size: 2rem;
+    
+      // svg {
+      //   margin-right: 1rem;
+      //   // width: 20px;
+      // }
+    
+      // a {
+      //   &:link {
+      //     color: inherit;
+      //   }
+    
+      //   &:visited {
+      //     color: inherit;
+      //   }
+    
+      //   &:hover {
+      //     color: colors.$red-accent;
+      //   }
+      // }
+    }
+    
+    .intro-pic {
+      background-color: red;
+      width: var.$div-size;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  /* ---------------------------------- INTRO --------------------------------- */
+  
+
+  /* -------------------------------------------------------------------------- */
+  /*                                    ABOUT                                   */
+  /* -------------------------------------------------------------------------- */
+  .about-container {
+    @include section-container;
+    background-color: colors.$dark-background;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .about-content {
+      @include gap;
+      padding: 1rem;
+    }
+    
+    .about-pic {
+      background-color: green;
+      width: var.$div-size;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .about-text {
+      max-width: var.$div-size;
+      max-height: var.$div-size;
+    
+      h1 {
+        font-size: var.$header-font-size;
+      }
+    }
+
+    .about-links {
+      padding: 1rem 0;
+    }
+  }
+
+  /* ---------------------------------- ABOUT --------------------------------- */
+  
+
+  /* -------------------------------------------------------------------------- */
+  /*                                  PROJECTS                                  */
+  /* -------------------------------------------------------------------------- */
+  .projects-container {
+    @include section-container;
+    background-color: colors.$dark-background;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+
+    .projects-header {
+      @include container-header;
+      
+    }
+    
+    .projects-content {
+      @include gap;
+    }
+  }
+  
+  /* -------------------------------- PROJECTS -------------------------------- */
+  
+  
+  /* -------------------------------------------------------------------------- */
+  /*                                   CONTACT                                  */
+  /* -------------------------------------------------------------------------- */
+  .contact-container {
+    @include section-container;
+    background-color: colors.$dark-background;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 2rem;
+
+    .contact-header {
+      @include container-header;
+    }
+
+    .contact-content {
+      display: flex;
+      // justify-content: center;
+      // align-content: center;
+      gap: var.$gap;
+  
+
+      .contact-info {
+        // display: flex;
+        // flex-direction: column;
+        // justify-content: center;
+        h2 {
+          padding-bottom: calc(var.$gap * 0.5);
+        }
+  
+        .row {
+          padding-bottom: calc(var.$gap * 0.5);
+        }
+    
+        .contact-socials {
+          @include icon-link;
+          font-size: 1.5rem;
+        }
+      }
+    }
+    
+    .form-container {
+      width: var.$div-size;
+  
+      form {
+        width: 95%;
+  
+        input, textarea {
+          z-index: 1;
+          // position: relative;
+          border: 0;
+          width: 100%;
+          // background: transparent;
+          background-color: colors.$white;
+          @include dark-drop-shadow;
+          padding: 0.5rem;
+          border-radius: var.$rounded-bar;
+          margin-bottom: 1rem;
+          margin-top: 0.5rem;
+          @include sub-font-important;
+          font-size: calc(var.$default-font-size - 0.2rem);
+          
+          &:focus {
+            outline: 0.15rem solid colors.$red-accent;
+          }
+        }
+        
+        textarea {
+          border-radius: var.$rounded;
+          resize: none;
+        }
+        
+        // label {
+        //   z-index: 2;
+        //   // position: absolute;
+        //   text-transform: capitalize;
+        //   margin-left: 1rem;
+        //   font-size: var.$default-font-size;
+  
+        //   span {
+        //     color: colors.$red-accent;
+        //     font-weight: 700;
+        //   }
+        // }
+      } /* form */
+      
+      #name, #email, #subject, #message {
+        padding-left: 1rem;
+        // padding-right: 0.5rem;
+      }
+  
+      p {
+        margin-top: 1rem;
+        font-size: var.$subtext-font-size;
+        // font-size: 100px;
+      }
+    }
+  
+    .form-submit {
+      button {
+        @include button;
+        border: none;
+        @include main-font;
+        font-size: var.$subtext-font-size;
+        cursor: pointer;
+      }
+    }
+  }
+  /* --------------------------------- CONTACT -------------------------------- */
+}

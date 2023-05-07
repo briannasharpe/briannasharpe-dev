@@ -1,48 +1,65 @@
-import Button from '../modules/Button/Button';
+import InfoRow from '../modules/InfoRow/InfoRow';
+import DateTime from '../modules/DateTime/DateTime';
+import { introLinks, contactInfo } from '../constants';
 
-function Contact({ currentTheme }) {
-// function Contact() {
+function Contact() {
   return(
     <>
       <section id="contact" className="contact-container">
         <div className="contact-header">
           <h1>Let's Connect</h1>
         </div>
-        <div className="form-container">
-          <form>
-            {/* <div className="form-row">
-            </div> */}
-            <div className="input-group">
-              <label htmlFor="name">name<span>*</span></label>
-              <input type="text" name="name" id="name" required />
+        <div className="contact-content">
+          <div className="contact-info">
+            <h2>Contact Info</h2>
+            <div className="row">
+              <InfoRow 
+                icon="fa-solid fa-envelope"
+                title="Email"
+                content={contactInfo[0].item}
+              />
+              <InfoRow 
+                icon="fa-solid fa-location-dot"
+                title="Location"
+                content={contactInfo[1].item}
+              />
+              <InfoRow 
+                icon="fa-solid fa-clock"
+                title="Time"
+                content={<DateTime />}
+              />
             </div>
-            <div className="input-group">
-              <label htmlFor="email">email address<span>*</span></label>
-              <input type="email" name="email" id="email" required />
+            <h2>Socials</h2>
+            <div className="contact-socials">
+              <a href={introLinks[0].link} title={introLinks[0].id} target="_blank" rel="noreferrer">
+                  <i className="fa-brands fa-github"></i>
+                </a>
+                <a href={introLinks[1].link} title={introLinks[1].id} target="_blank" rel="noreferrer">
+                  <i className="fa-brands fa-linkedin"></i>
+                </a>
             </div>
-            <div className="input-group">
-              <label htmlFor="subject">subject</label>
-              <input type="text" name="subject" id="subject"/>
-            </div>
-            <div className="input-group">
-              <label htmlFor="message">message<span>*</span></label>
-              <textarea name="message" rows="6" id="message" required />
-            </div>
-            {/* <div className="subject">
-            </div>
-            <div className="message">
-            </div> */}
-            {/* <Button 
-              link="/"
-              text="Send Message"
-              title="send message"
-              icon="fa-solid fa-paper-plane"
-              /> */}
-              <div className="form-submit">
-                <button type="submit">Send Message <i className="fa-solid fa-paper-plane"></i></button>
-              </div>
-          </form>
-        <p>Send an <span>email</span> instead.</p>
+          </div>
+
+          {/* </div> */}
+          {/* ------------------------------ CONTACT FORM ------------------------------ */}
+          <div className="form-container">
+            <form>
+              {/* --------------------------- FORM LABELS (hide) --------------------------- */}
+                {/* <label htmlFor="name">name<span>*</span></label>
+                <label htmlFor="email">email address<span>*</span></label>
+                <label htmlFor="subject">subject</label>
+                <label htmlFor="message">message<span>*</span></label> */}
+                <input type="text" name="name" id="name" placeholder="Name*" required />
+                <input type="email" name="email" id="email" placeholder="Email address*" required />
+                <input type="text" name="subject" id="subject" placeholder="Subject" />
+                <textarea name="message" rows="6" id="message" placeholder="Message*" required />
+                <div className="form-submit">
+                  <button type="submit">Send Message <i className="fa-solid fa-paper-plane"></i></button>
+                </div>
+            </form>
+          {/* <p>Send an <span>email</span> instead.</p> */}
+          </div>
+          {/* ------------------------------ CONTACT FORM ------------------------------ */}
         </div>
       </section>
     </>

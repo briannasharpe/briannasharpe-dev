@@ -3,27 +3,28 @@
 
 ## To-do:
 Major
- - [x] dark/light mode
-	 - [x] color palette
-	 - [ ] save theme on refresh
-	 - [ ] transfer styles to dark mode
  - [ ] mobile view
- - [x] contact section
-   - [ ] backend for form data
-	 - [ ] different style
- - [ ] navbar active class
  - [ ] scrollbar
+  - [x] dark/light mode
+ 	 - [ ] save theme on refresh
+ 	 - [x] transfer styles to dark mode
+ - [x] contact section
+ 	 - [ ] backend for form data
+ 	 - [ ] different style
+ - [ ] project module
+   - [ ] landscape view
+ - [ ] contact form 
+   - [ ] temp backend (github)
+	 - [ ] perm backend
  
 Minor
- - [ ] link title styling
- - [ ] project module
-	 - [ ] description sizing
-	 - [ ] format (landscape view?)
- - [ ] intro location hover: date and time
  - [ ] to top button
+ - [x] ~~intro location hover: date and time~~ → in contact info
+ - [ ] navbar active class
+ - [ ] link title styling
 
 Ideas
- - [ ] technologies: switch from logos to text, on hover: pause animation → on hover, switch from logos to text
+- [ ] technologies: switch from logos to text, on hover: pause animation → on hover, switch from logos to text
 
 ## Temp Files
 - `src\context\ThemeContext.jsx`
