@@ -368,6 +368,8 @@
     }
   
     .form-submit {
+      display: flex;
+      justify-content: center;
       button {
         @include button;
         border: none;

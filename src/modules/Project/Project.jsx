@@ -1,36 +1,12 @@
-import classes from './Project.module.scss';
 import Button from '../Button/Button';
+import Technologies from '../Technologies/Technologies';
 
-function Project({ img, name, description, code, demo, currentTheme }) {
+import classes from './Project.module.scss';
+
+function Project({ img, name, description, tech, code, demo, currentTheme }) {
   return(
     <>
       <div className={classes[`${currentTheme}`]}>
-        <div className={classes['project-container-1']}>
-          <div className={classes['project-image-1']}>
-            <img src={img}></img>
-          </div>
-          <div className={classes['project-info-1']}>
-            <h2>{name}</h2>
-            <p>{description}</p>
-          </div>
-          <div className={classes['project-button-container-1']}>
-            <Button 
-              link={code}
-              text="Code"
-              title="code link"
-              icon="fa-brands fa-github"
-            />
-            <Button 
-              link={demo}
-              text="Demo"
-              title="demo link"
-              icon="fa-solid fa-arrow-up-right-from-square"
-            />
-          </div>
-        </div>
-      </div>
-
-      {/* <div className={classes[`${currentTheme}`]}>
         <div className={classes['project-container']}>
           <div className={classes['project-image']}>
             <img src={img}></img>
@@ -38,8 +14,45 @@ function Project({ img, name, description, code, demo, currentTheme }) {
           <div className={classes['project-info']}>
             <h2>{name}</h2>
             <p>{description}</p>
+
+            <div className={classes['project-tech-container']}>
+              <Technologies 
+                techArray={tech}
+                size="2rem"
+              />
+              {/* {tech} */}
+            </div>
+
+            <div className={classes['project-button-container']}>
+              <Button 
+                link={code}
+                text="Code"
+                title="code link"
+                icon="fa-brands fa-github"
+              />
+              <Button 
+                link={demo}
+                text="Demo"
+                title="demo link"
+                icon="fa-solid fa-arrow-up-right-from-square"
+              />
+            </div>
+
           </div>
-          <div className={classes['project-button-container']}>
+        </div>
+      </div>
+
+      {/* ---------------------------------- card ---------------------------------- */}
+      {/* <div className={classes[`${currentTheme}`]}>
+        <div className={classes['project-container-card']}>
+          <div className={classes['project-image-card']}>
+            <img src={img}></img>
+          </div>
+          <div className={classes['project-info-card']}>
+            <h2>{name}</h2>
+            <p>{description}</p>
+          </div>
+          <div className={classes['project-button-container-card']}>
             <Button 
               link={code}
               text="Code"

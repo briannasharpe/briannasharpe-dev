@@ -3,76 +3,22 @@
 @use '../../assets/abstracts/mixins' as *;
 
 .light {
-  .project-container-1 {
-    width: calc(var.$div-size * 0.7);
-    display: flex;
-    flex-direction: column;
-    border-radius: var.$rounded;
-    background-color: colors.$light-background;
-    @include light-drop-shadow;
-  
-    .project-image-1 {
-      display: flex;
-      justify-content: center;
-      height: 11.25rem;
-      overflow: hidden;
-      border-radius: var.$rounded var.$rounded 0 0;
-    
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: top center;
-        transition: all 10s ease-in-out;
-      }
-    
-      &:hover img {
-        object-position: bottom center;
-      }
-    }
-    
-    .project-info-1 {
-      padding: 1rem 1rem 0 1rem;
-    
-      h2 {
-        text-align: center;
-        padding-bottom: 0.3rem;
-      }
-      
-      p {
-        text-align: center;
-        overflow: scroll;
-        overflow-x: hidden;
-        height: 7.5rem;
-      }
-    }
-    
-    .project-button-container-1 {
-      display: flex;
-      gap: 1rem;
-      justify-content: center;
-      padding: 1rem 0;
-    }
-  }
-
-
-
-  
-  /* ---------------------------------- card ---------------------------------- */
   .project-container {
-    width: calc(var.$div-size * 0.7);
+    width: calc(var.$div-size * 2);
+    height: calc(var.$div-size * 0.7);
     display: flex;
-    flex-direction: column;
-    border-radius: var.$rounded;
+    gap: 1rem;
+    padding: 1rem;
     background-color: colors.$light-background;
+    border-radius: var.$rounded;
     @include light-drop-shadow;
   
     .project-image {
       display: flex;
       justify-content: center;
-      height: 11.25rem;
+      flex-basis: 50%;
       overflow: hidden;
-      border-radius: var.$rounded var.$rounded 0 0;
+      border-radius: var.$rounded;
     
       img {
         width: 100%;
@@ -88,25 +34,25 @@
     }
     
     .project-info {
-      padding: 1rem 1rem 0 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex-basis: 50%;
+      text-align: center;
     
       h2 {
-        text-align: center;
-        padding-bottom: 0.3rem;
+        padding: 1rem;
       }
-      
-      p {
-        text-align: center;
-        overflow: scroll;
-        overflow-x: hidden;
-        height: 7.5rem;
-      }
+    }
+
+    .project-tech-container {
+      padding-top: 1rem;
     }
     
     .project-button-container {
       display: flex;
-      gap: 1rem;
       justify-content: center;
+      gap: 1rem;
       padding: 1rem 0;
     }
   }
@@ -114,19 +60,21 @@
 
 .dark {
   .project-container {
-    width: calc(var.$div-size * 0.7);
+    width: calc(var.$div-size * 2);
+    height: calc(var.$div-size * 0.7);
     display: flex;
-    flex-direction: column;
-    border-radius: var.$rounded;
+    gap: 1rem;
+    padding: 1rem;
     background-color: colors.$dark-background-accent;
+    border-radius: var.$rounded;
     @include dark-drop-shadow;
   
     .project-image {
       display: flex;
       justify-content: center;
-      height: 11.25rem;
+      flex-basis: 50%;
       overflow: hidden;
-      border-radius: var.$rounded var.$rounded 0 0;
+      border-radius: var.$rounded;
     
       img {
         width: 100%;
@@ -142,26 +90,84 @@
     }
     
     .project-info {
-      padding: 1rem 1rem 0 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex-basis: 50%;
+      text-align: center;
     
       h2 {
-        text-align: center;
-        padding-bottom: 0.3rem;
+        padding: 1rem;
       }
-      
-      p {
-        text-align: center;
-        overflow: scroll;
-        overflow-x: hidden;
-        height: 7.5rem;
-      }
+    }
+
+    .project-tech-container {
+      padding-top: 1rem;
     }
     
     .project-button-container {
       display: flex;
-      gap: 1rem;
       justify-content: center;
+      gap: 1rem;
       padding: 1rem 0;
     }
   }
 }
+
+
+
+
+
+
+/* ---------------------------------- card ---------------------------------- */
+// .project-container-card {
+//   width: calc(var.$div-size * 0.7);
+//   display: flex;
+//   flex-direction: column;
+//   border-radius: var.$rounded;
+//   background-color: colors.$light-background;
+//   @include light-drop-shadow;
+
+//   .project-image-card {
+//     display: flex;
+//     justify-content: center;
+//     height: 11.25rem;
+//     overflow: hidden;
+//     border-radius: var.$rounded var.$rounded 0 0;
+  
+//     img {
+//       width: 100%;
+//       height: 100%;
+//       object-fit: cover;
+//       object-position: top center;
+//       transition: all 10s ease-in-out;
+//     }
+  
+//     &:hover img {
+//       object-position: bottom center;
+//     }
+//   }
+  
+//   .project-info-card {
+//     padding: 1rem 1rem 0 1rem;
+  
+//     h2 {
+//       text-align: center;
+//       padding-bottom: 0.3rem;
+//     }
+    
+//     p {
+//       text-align: center;
+//       overflow: scroll;
+//       overflow-x: hidden;
+//       height: 7.5rem;
+//     }
+//   }
+  
+//   .project-button-container-card {
+//     display: flex;
+//     gap: 1rem;
+//     justify-content: center;
+//     padding: 1rem 0;
+//   }
+// }

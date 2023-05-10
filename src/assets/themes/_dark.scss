@@ -251,16 +251,18 @@
     background-color: colors.$dark-background;
     display: flex;
     flex-direction: column;
-    // justify-content: center;
+    justify-content: center;
     align-items: center;
-
+    
     .projects-header {
       @include container-header;
-      
     }
     
     .projects-content {
       @include gap;
+      // display: flex;
+      flex-direction: column;
+      // flex-wrap: wrap;
     }
   }
   
@@ -366,6 +368,8 @@
     }
   
     .form-submit {
+      display: flex;
+      justify-content: center;
       button {
         @include button;
         border: none;

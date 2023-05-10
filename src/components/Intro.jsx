@@ -1,4 +1,4 @@
-// import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { introLinks } from '../constants';
 
@@ -13,10 +13,10 @@ function Intro() {
             <p>I am a Front End Developer based in Los Angeles, California.</p>
             <div className="intro-links">
               <a href={introLinks[0].link} title={introLinks[0].id} target="_blank" rel="noreferrer">
-                <i className="fa-brands fa-github"></i>
+                <FontAwesomeIcon icon="fa-brands fa-github" />
               </a>
               <a href={introLinks[1].link} title={introLinks[1].id} target="_blank" rel="noreferrer">
-                <i className="fa-brands fa-linkedin"></i>
+              <FontAwesomeIcon icon="fa-brands fa-linkedin" />
               </a>
             </div>
           </div>

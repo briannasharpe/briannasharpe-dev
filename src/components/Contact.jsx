@@ -1,5 +1,8 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 import InfoRow from '../modules/InfoRow/InfoRow';
 import DateTime from '../modules/DateTime/DateTime';
+
 import { introLinks, contactInfo } from '../constants';
 
 function Contact() {
@@ -32,10 +35,11 @@ function Contact() {
             <h2>Socials</h2>
             <div className="contact-socials">
               <a href={introLinks[0].link} title={introLinks[0].id} target="_blank" rel="noreferrer">
-                  <i className="fa-brands fa-github"></i>
+                  <FontAwesomeIcon icon="fa-brands fa-github" />
+                  
                 </a>
                 <a href={introLinks[1].link} title={introLinks[1].id} target="_blank" rel="noreferrer">
-                  <i className="fa-brands fa-linkedin"></i>
+                  <FontAwesomeIcon icon="fa-brands fa-linkedin" />
                 </a>
             </div>
           </div>
@@ -54,7 +58,7 @@ function Contact() {
                 <input type="text" name="subject" id="subject" placeholder="Subject" />
                 <textarea name="message" rows="6" id="message" placeholder="Message*" required />
                 <div className="form-submit">
-                  <button type="submit">Send Message <i className="fa-solid fa-paper-plane"></i></button>
+                  <button type="submit">Send Message <FontAwesomeIcon icon="fa-solid fa-paper-plane" /></button>
                 </div>
             </form>
           {/* <p>Send an <span>email</span> instead.</p> */}

@@ -1,13 +1,12 @@
 // import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
 
 import classes from './ThemeToggleButton.module.scss';
 
 function ThemeToggleButton({ currentTheme, changeTheme }) {
   // const [dark, setDark] = useState(false);
 
-  let icon = currentTheme ? <FontAwesomeIcon icon={faSun} /> : <FontAwesomeIcon icon={faMoon} />;
+  let icon = currentTheme ? <FontAwesomeIcon icon="fa-solid fa-sun" /> : <FontAwesomeIcon icon="fa-solid fa-moon" />;
 
   // const changeTheme = () => {
 

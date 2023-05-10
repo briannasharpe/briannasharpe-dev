@@ -1,0 +1,15 @@
+@use '../../assets/abstracts/variables' as var;
+
+.tech {
+  ul {
+    list-style: none;
+    display: inline-flex;
+    gap: 1rem;
+  }
+
+  span {
+    font-size: var.$default-font-size;
+    position: relative;
+    bottom: 10%;
+  }
+}

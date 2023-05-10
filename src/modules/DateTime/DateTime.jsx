@@ -4,7 +4,7 @@ import 'moment-timezone';
 
 function DateTime() {
   let time = moment().tz("America/Los_Angeles").format('MMMM Do YYYY, h:mm:ss a');
-  console.log(moment().tz("America/Los_Angeles").format('MMMM Do YYYY, h:mm:ss a'))
+  // console.log(moment().tz("America/Los_Angeles").format('MMMM Do YYYY, h:mm:ss a'))
   
   const [currentTime, setcurrentTime] = useState(time);
 

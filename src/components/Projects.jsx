@@ -1,4 +1,5 @@
 import Project from '../modules/Project/Project';
+
 import { projectData } from '../constants';
 
 function Projects({ currentTheme }) {
@@ -15,6 +16,7 @@ function Projects({ currentTheme }) {
               img={project.image} 
               name={project.name}
               description={project.description}
+              tech={project.technologies}
               code={project.code}
               demo={project.demo}
               currentTheme={currentTheme}

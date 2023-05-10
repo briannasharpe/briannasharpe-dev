@@ -1,9 +1,9 @@
-// import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { NavHashLink } from 'react-router-hash-link';
 
-import { navLinks } from '../constants';
 import ThemeToggleButton from '../modules/ThemeToggleButton/ThemeToggleButton';
+
+import { navLinks } from '../constants';
 
 function NavBar({ currentTheme, changeTheme }) {
   // const [active, setActive] = useState("");
