@@ -22,8 +22,6 @@ function App() {
 //   setTheme(localStorage.getItem("theme"));
 // }, []);
 
-
-
   return(
     <>
       <BrowserRouter>

@@ -20,7 +20,6 @@ function Project({ img, name, description, tech, code, demo, currentTheme }) {
                 techArray={tech}
                 size="2rem"
               />
-              {/* {tech} */}
             </div>
 
             <div className={classes['project-button-container']}>
@@ -37,37 +36,9 @@ function Project({ img, name, description, tech, code, demo, currentTheme }) {
                 icon="fa-solid fa-arrow-up-right-from-square"
               />
             </div>
-
           </div>
         </div>
       </div>
-
-      {/* ---------------------------------- card ---------------------------------- */}
-      {/* <div className={classes[`${currentTheme}`]}>
-        <div className={classes['project-container-card']}>
-          <div className={classes['project-image-card']}>
-            <img src={img}></img>
-          </div>
-          <div className={classes['project-info-card']}>
-            <h2>{name}</h2>
-            <p>{description}</p>
-          </div>
-          <div className={classes['project-button-container-card']}>
-            <Button 
-              link={code}
-              text="Code"
-              title="code link"
-              icon="fa-brands fa-github"
-            />
-            <Button 
-              link={demo}
-              text="Demo"
-              title="demo link"
-              icon="fa-solid fa-arrow-up-right-from-square"
-            />
-          </div>
-        </div>
-      </div> */}
     </>
   );
 }

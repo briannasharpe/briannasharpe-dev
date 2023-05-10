@@ -7,7 +7,6 @@ function InfoRow({ icon, title, content }) {
     <>
       <div className={classes['info-row-container']}>
         <div className={classes['info-icon']}>
-          {/* <i className={icon}></i> */}
           <FontAwesomeIcon icon={icon} />
         </div>
         <div className={classes['info-content']}>

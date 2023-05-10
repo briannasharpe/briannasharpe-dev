@@ -47,13 +47,6 @@
           color: colors.$light-primary-text;
         }
       }
-    
-      // p {
-      //   span {
-      //     color: colors.$red-accent;
-      //     font-size: 2rem;
-      //   }
-      // }
     }
     
     .navbar-logo-dot {
@@ -65,10 +58,8 @@
       color: colors.$light-primary-text;
       font-size: var.$default-font-size;
       
-      // for div
       a {
         margin-right: 2rem;
-        // float: left;
         text-decoration: none;
         text-transform: capitalize;
     
@@ -91,27 +82,8 @@
     
       
       li {
-        //   // display: inline;
         float: left;
-        
-      //   // a {
-      //   //   text-decoration: none;
-      //   //   text-transform: capitalize;
-    
-      //   //   &:visited {
-      //   //     color: inherit;
-      //   //   }
-          
-      //   //   &:hover {
-      //   //     color: blue;
-      //   //   }
-          
-      //   //   &:active {
-      //   //     color: green;
-      //   //   }
-      //   // }
       }
-    
     }
     
     // .navbar-links-active {
@@ -123,15 +95,6 @@
     // }
     
     .navbar-links-mobile {
-    
-    }
-    
-    .theme {
-      // display: flex;
-      // border-radius: 5px;
-      // margin-left: 2rem;
-      // padding-left: 1px;
-      // margin-right: 2rem;
     
     }
   }
@@ -155,9 +118,7 @@
     }
     
     .intro-text {
-      // background-color: aqua;
       max-width: var.$div-size;
-      // max-height: var.$div-size;
     
       h1 {
         font-size: 4rem;
@@ -170,26 +131,6 @@
     
     .intro-links {
       @include icon-link;
-      // font-size: 2rem;
-    
-      // svg {
-      //   margin-right: 1rem;
-      //   // width: 20px;
-      // }
-    
-      // a {
-      //   &:link {
-      //     color: inherit;
-      //   }
-    
-      //   &:visited {
-      //     color: inherit;
-      //   }
-    
-      //   &:hover {
-      //     color: colors.$red-accent;
-      //   }
-      // }
     }
     
     .intro-pic {
@@ -260,9 +201,7 @@
     
     .projects-content {
       @include gap;
-      // display: flex;
       flex-direction: column;
-      // flex-wrap: wrap;
     }
   }
   
@@ -286,15 +225,10 @@
 
     .contact-content {
       display: flex;
-      // justify-content: center;
-      // align-content: center;
       gap: var.$gap;
   
 
       .contact-info {
-        // display: flex;
-        // flex-direction: column;
-        // justify-content: center;
         h2 {
           padding-bottom: calc(var.$gap * 0.5);
         }
@@ -357,14 +291,12 @@
       
       #name, #email, #subject, #message {
         padding-left: 1rem;
-        // padding-right: 0.5rem;
       }
   
-      p {
-        margin-top: 1rem;
-        font-size: var.$subtext-font-size;
-        // font-size: 100px;
-      }
+      // p {
+      //   margin-top: 1rem;
+      //   font-size: var.$subtext-font-size;
+      // }
     }
   
     .form-submit {

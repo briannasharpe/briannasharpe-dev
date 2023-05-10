@@ -6,24 +6,14 @@ import ThemeToggleButton from '../modules/ThemeToggleButton/ThemeToggleButton';
 import { navLinks } from '../constants';
 
 function NavBar({ currentTheme, changeTheme }) {
-  // const [active, setActive] = useState("");
-  // const [toggle, setToggle] = useState(false);
-
-//   useEffect(() => {
-//     window.scroll(0, 0);
-// }, []);
-
   return(
     <>
       <nav className="navbar-container">
         <div className="navbar-items">
           <div className="navbar-logo">
             <Link 
-            smooth to="/"
-              // className={classes['navbar-logo']}
+              smooth to="/"
               onClick = {() => {
-                // setActive("");
-                // window.scrollTo(0, 0)
                 window.scrollTo({
                   top: 0,
                   behavior: 'smooth',
@@ -36,23 +26,8 @@ function NavBar({ currentTheme, changeTheme }) {
           <div className="navbar-links">
             <ul>
               {navLinks.map((link) => (
-                <li
-                  key={link.id}
-                  // className={classes.link}
-                  // className={`${
-                  //   active === link.title
-                  //   ? "navbar-links-active"
-                  //   : ""
-                  // }`}
-                  // onClick={() => setActive(link.title)}
-                >
-                  {/* <a href={`#${link.id}`}>{link.title}</a> */}
-
-                  <NavHashLink 
-                    smooth to={`#${link.id}`} 
-                    // activeClassName={classes['navbar-links-active']} 
-                    // activestyle={{ color: 'red' }}
-                  >
+                <li key={link.id}>
+                  <NavHashLink smooth to={`#${link.id}`}>
                     {link.title}
                   </NavHashLink>
                 </li>
