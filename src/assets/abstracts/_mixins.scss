@@ -24,10 +24,23 @@
 }
 
 /* -------------------------------- CONTAINER ------------------------------- */
+@mixin navbar-container {
+  height: var.$navbar-height;
+
+  @media (max-width: 70em) {
+    height: var.$mobile-navbar-height;
+  }
+}
+
 @mixin section-container {
   width: 100%;
   min-height: var.$section-height;
   padding-top: var.$navbar-height;
+
+  @media (max-width: 70em) {
+    min-height: var.$mobile-section-height;
+    padding-top: var.$mobile-navbar-height;
+  }
 }
 
 @mixin gap {
@@ -38,7 +51,15 @@
 @mixin container-header {
   h1 {
     font-size: var.$header-font-size;
-    padding: 1rem 0;
+    // padding: 1rem 0;
+    margin-top: 1rem;
+  }
+
+  @media (max-width: 70em) {
+    h1 {
+      font-size: calc(var.$header-font-size * 0.8);
+      padding: 0 2rem;
+    }
   }
 }
 
@@ -63,7 +84,11 @@
   }
   &:hover {
     color: colors.$white;
-    animation: pop 0.5s ease;
+    background-color: colors.$red-accent-hover;
+    // animation: pop 0.5s ease;
+  }
+  &:active {
+    background-color: colors.$red-accent-hover;
   }
 }
 
@@ -87,6 +112,13 @@
         color: colors.$red-accent;
       }
     }
+}
+
+/* ------------------------------- TRANSITION ------------------------------- */
+@mixin fade {
+  transition: all 0.3s linear;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
 }
 
 /* -------------------------------------------------------------------------- */

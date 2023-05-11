@@ -25,7 +25,29 @@ body {
 }
 
 a {
-  transition: all 0.3s linear;
-  -webkit-transition: all 0.3s linear;
-  -moz-transition: all 0.3s linear;
+  @include fade;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                  SCROLLBAR                                 */
+/* -------------------------------------------------------------------------- */
+/* width */
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  // background: colors.$light-background;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: colors.$red-accent;
+  border-radius: var.$rounded;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: colors.$red-accent-hover;
 }

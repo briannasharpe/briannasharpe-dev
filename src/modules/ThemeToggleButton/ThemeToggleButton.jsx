@@ -9,6 +9,7 @@ function ThemeToggleButton({ currentTheme, changeTheme }) {
   return(
     <>
       <div className={classes.toggle} onClick={changeTheme}>
+      <span className="sr-only">Theme Toggle</span>
         {icon}
       </div>
     </>

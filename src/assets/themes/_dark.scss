@@ -9,15 +9,14 @@
   /*                                   NAVBAR                                   */
   /* -------------------------------------------------------------------------- */
   .navbar-container {
+    @include navbar-container;
     background-color: colors.$dark-background;
     position: sticky;
     top: 0;
     left: 0;
     right: 0;
     width: 100%;
-    height: var.$navbar-height;
     display: flex;
-    align-items: center;
     border-bottom: 0.1rem solid colors.$dark-background-accent;
     @include dark-drop-shadow;
     z-index: 100;
@@ -57,6 +56,7 @@
     .navbar-links {
       color: colors.$dark-primary-text;
       font-size: var.$default-font-size;
+      display: block;
       
       a {
         margin-right: 2rem;
@@ -94,8 +94,8 @@
     //   color: white;
     // }
     
-    .navbar-links-mobile {
-    
+    .mobile-nav-toggle {
+      display: none;
     }
   }
   /* --------------------------------- NAVBAR --------------------------------- */
@@ -107,7 +107,7 @@
   .intro-container {
     @include section-container;
     background-color: colors.$dark-background;
-    padding: 0;
+    padding-top: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -135,7 +135,7 @@
     
     .intro-pic {
       background-color: red;
-      width: var.$div-size;
+      max-width: var.$div-size;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -156,12 +156,12 @@
 
     .about-content {
       @include gap;
-      padding: 1rem;
+      // padding: 1rem;
     }
     
     .about-pic {
       background-color: green;
-      width: var.$div-size;
+      max-width: var.$div-size;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -197,11 +197,13 @@
     
     .projects-header {
       @include container-header;
+      padding-bottom: 2rem;
     }
     
     .projects-content {
       @include gap;
       flex-direction: column;
+      // padding-top: 1rem;
     }
   }
   
@@ -226,7 +228,6 @@
     .contact-content {
       display: flex;
       gap: var.$gap;
-  
 
       .contact-info {
         h2 {
@@ -245,7 +246,7 @@
     }
     
     .form-container {
-      width: var.$div-size;
+      max-width: var.$div-size;
   
       form {
         width: 95%;
@@ -312,4 +313,123 @@
     }
   }
   /* --------------------------------- CONTACT -------------------------------- */
+
+
+  @media (max-width: 70em) {
+    /* -------------------------------------------------------------------------- */
+    /*                               NAVBAR (MOBILE)                              */
+    /* -------------------------------------------------------------------------- */
+    .navbar-container {
+      .navbar-links {
+        display: none;
+      }
+
+      .mobile-nav-toggle {
+        position: absolute;
+        display: block;
+        z-index: 200;
+        right: 2rem;
+        border: 0;
+        font-size: var.$default-font-size;
+      }
+    }
+
+    .mobile-nav-links {
+      position: fixed;
+      z-index: 300;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: colors.$dark-background;
+
+      a {
+        text-decoration: none;
+        text-transform: capitalize;
+    
+        &:link {
+          color: colors.$dark-primary-text;
+        }
+    
+        &:visited {
+          color: colors.$dark-primary-text;
+        }
+          
+        &:hover {
+          color: colors.$red-accent;
+        }
+      }
+    
+      ul {
+        list-style: none;
+      }
+      
+      li {
+        text-align: center;
+        padding: 2rem;
+        font-size: calc(var.$default-font-size * 2);
+      }
+
+      .close-nav {
+        position: absolute;
+        top: 1rem;
+        right: 2.4rem;
+        font-size: calc(var.$default-font-size * 1.4);
+      }
+    }
+    /* ----------------------------- NAVBAR (MOBILE) ---------------------------- */
+
+
+    /* -------------------------------------------------------------------------- */
+    /*                               INTRO (MOBILE)                               */
+    /* -------------------------------------------------------------------------- */
+    .intro-container {
+      padding-top: 0;
+
+      .intro-content {
+        flex-direction: column-reverse;
+        padding: 0 2rem;
+      }
+    }
+    /* ----------------------------- INTRO (MOBILE) ----------------------------- */
+
+
+  /* -------------------------------------------------------------------------- */
+  /*                               ABOUT (MOBILE)                               */
+  /* -------------------------------------------------------------------------- */
+  .about-container {
+    .about-content {
+      flex-direction: column;
+      padding: 0 2rem;
+    }
+  }
+  /* ----------------------------- ABOUT (MOBILE) ----------------------------- */
+
+
+  /* -------------------------------------------------------------------------- */
+  /*                              PROJECTS (MOBILE)                             */
+  /* -------------------------------------------------------------------------- */
+  .projects-container {
+    .projects-content {
+      padding: 0 2rem;
+    }
+  }
+  /* ---------------------------- PROJECTS (MOBILE) --------------------------- */
+
+
+  /* -------------------------------------------------------------------------- */
+  /*                              CONTACT (MOBILE)                              */
+  /* -------------------------------------------------------------------------- */
+  .contact-container {
+    .contact-content {
+      flex-direction: column;
+      padding: 2rem;
+    }
+    .form-container {
+      margin-right: 0.5rem;
+    }
+  }
+  /* ---------------------------- CONTACT (MOBILE) ---------------------------- */
+  }
 }

@@ -44,7 +44,6 @@ function Contact() {
             </div>
           </div>
 
-          {/* </div> */}
           {/* ------------------------------ CONTACT FORM ------------------------------ */}
           <div className="form-container">
             <form>

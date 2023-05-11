@@ -4,8 +4,8 @@
 
 .light {
   .project-container {
-    width: calc(var.$div-size * 2);
-    height: calc(var.$div-size * 0.7);
+    max-width: calc(var.$div-size * 2);
+    max-height: calc(var.$div-size * 0.7);
     display: flex;
     gap: 1rem;
     padding: 1rem;
@@ -56,12 +56,25 @@
       padding: 1rem 0;
     }
   }
+
+  @media (max-width: 70em) {
+    .project-container {
+      flex-direction: column;
+      max-height: 100%;
+
+      .project-image {
+        max-height: 50vh;
+        overflow: scroll;
+        overflow-x: hidden;
+      }
+    }
+  }
 }
 
 .dark {
   .project-container {
-    width: calc(var.$div-size * 2);
-    height: calc(var.$div-size * 0.7);
+    max-width: calc(var.$div-size * 2);
+    max-height: calc(var.$div-size * 0.7);
     display: flex;
     gap: 1rem;
     padding: 1rem;
@@ -110,6 +123,21 @@
       justify-content: center;
       gap: 1rem;
       padding: 1rem 0;
+    }
+  }
+
+  @media (max-width: 70em) {
+    padding: 2rem;
+
+    .project-container {
+      flex-direction: column;
+      max-height: 100%;
+
+      .project-image {
+        max-height: 50vh;
+        overflow: scroll;
+        overflow-x: hidden;
+      }
     }
   }
 }
