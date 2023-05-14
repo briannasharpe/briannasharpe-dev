@@ -78,11 +78,10 @@
     
       ul {
         list-style: none;
-      }
-    
-      
-      li {
-        float: left;
+
+        li {
+          float: left;
+        }
       }
     }
     
@@ -157,6 +156,8 @@
     .about-content {
       @include gap;
       // padding: 1rem;
+      width: min(80vw, var.$div-size);
+      height: 50vh;
     }
     
     .about-pic {
@@ -173,6 +174,7 @@
     
       h1 {
         font-size: var.$header-font-size;
+        padding-bottom: 0.5rem;
       }
     }
 
@@ -197,7 +199,6 @@
     
     .projects-header {
       @include container-header;
-      padding-bottom: 2rem;
     }
     
     .projects-content {
@@ -424,7 +425,7 @@
   .contact-container {
     .contact-content {
       flex-direction: column;
-      padding: 2rem;
+      padding: 0 2rem 2rem 2rem;
     }
     .form-container {
       margin-right: 0.5rem;

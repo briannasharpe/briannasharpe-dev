@@ -78,11 +78,10 @@
     
       ul {
         list-style: none;
-      }
-    
-      
-      li {
-        float: left;
+
+        li {
+          float: left;
+        }
       }
     }
     
@@ -157,6 +156,8 @@
     .about-content {
       @include gap;
       // padding: 1rem;
+      width: min(80vw, var.$div-size);
+      height: 50vh;
     }
     
     .about-pic {

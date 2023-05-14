@@ -5,7 +5,7 @@ import classes from './Technologies.module.scss';
 
 import { technologies } from '../../constants';
 
-function Technologies({ techArray, size }) {
+function Technologies({ techArray, size = '1.2rem' }) {
   /* --------------------------- SHOW NAMES ON HOVER -------------------------- */
   const [isHovering, setIsHovering] = useState(false);
 
@@ -16,15 +16,17 @@ function Technologies({ techArray, size }) {
   const handleMouseOut = () => {
     setIsHovering(false);
   };
+  /* -------------------------------------------------------------------------- */
 
   /* -------------------- GET TECH ARRAY FROM TECHNOLOGIES -------------------- */
   let finalTech = [];
 
   technologies.map((a) => {
     let matched = techArray.filter(b => a.id === b.id);
-    if(matched.length) {
+    if (matched.length) {
       finalTech.push(a);
   }});
+  /* -------------------------------------------------------------------------- */
 
   return(
     <>

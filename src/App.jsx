@@ -37,7 +37,7 @@ function App() {
               }}
             />
             <Intro />
-            <About />
+            <About currentTheme={theme} />
             <Projects currentTheme={theme} />
             <Contact />
           </div>

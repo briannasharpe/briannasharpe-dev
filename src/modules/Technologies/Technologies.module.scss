@@ -1,9 +1,12 @@
 @use '../../assets/abstracts/variables' as var;
 
 .tech {
+  width: inherit;
+  
   ul {
     list-style: none;
     display: inline-flex;
+    flex-wrap: wrap;
     gap: 1rem;
   }
 

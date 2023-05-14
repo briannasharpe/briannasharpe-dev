@@ -1,25 +1,42 @@
-import Button from '../modules/Button/Button';
+import Tabs from '../modules/Tabs/Tabs';
+import AboutInfo from '../modules/AboutSection/AboutInfo';
+import AboutTechStack from '../modules/AboutSection/AboutTechStack';
 
-function About() {
+function About({ currentTheme }) {
+  let tabArray = [
+    // {
+    //   id: "",
+    //   icon: "",
+    //   tabNum: 0,
+    //   content: "",
+    // },
+    {
+      id: 1,
+      icon: "fa-solid fa-user-pen",
+      // tabNum: 1,
+      content: <AboutInfo />,
+    },
+    {
+      id: 2,
+      icon: "fa-solid fa-code",
+      // tabNum: 2,
+      content: <AboutTechStack />,
+    },
+  ]
+
   return(
     <>
       <section id="about" className="about-container">
         <div className="about-content">
-          <div className="about-pic">
+          {/* <div className="about-pic">
             img
-          </div>
+          </div> */}
           <div className="about-text">
             <h1>About Me</h1>
-            <p>I love to create responsive web applications that have beautiful interfaces for a smooth user experience. Though I have been working on personal projects using React, I am eager to learn and work with other technologies. I want to apply my skills in a team setting and collaborate with other developers!</p>
-            {/* <p></p> */}
-            <div className="about-links">
-              <Button 
-                link="/"
-                text="Resume"
-                title="resume download link"
-                icon="fa-solid fa-download"
+            <Tabs 
+              contentArray={tabArray} 
+              currentTheme={currentTheme}
               />
-            </div>
           </div>
         </div>
       </section>
