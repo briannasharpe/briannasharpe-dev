@@ -5,21 +5,21 @@ import AboutTechStack from '../modules/AboutSection/AboutTechStack';
 function About({ currentTheme }) {
   let tabArray = [
     // {
-    //   id: "",
+    //   id: ,
+    //   title: "",
     //   icon: "",
-    //   tabNum: 0,
     //   content: "",
     // },
     {
       id: 1,
+      title: "About",
       icon: "fa-solid fa-user-pen",
-      // tabNum: 1,
       content: <AboutInfo />,
     },
     {
       id: 2,
+      title: "Tech",
       icon: "fa-solid fa-code",
-      // tabNum: 2,
       content: <AboutTechStack />,
     },
   ]

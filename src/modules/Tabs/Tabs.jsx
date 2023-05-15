@@ -14,13 +14,14 @@ function Tabs({ contentArray, currentTheme }) {
     <>
     <div className={classes[`${currentTheme}`]}>
       <div className={classes['tabs-container']}>
-        <ul className={classes['tabs-heading']}>
+        <ul className={classes['tabs-heading']} id={classes['heading']}>
           {contentArray.map((tab) => (
             <li
               key={tab.id}
               className={toggle === tab.id ? classes['active'] : classes['inactive']}
               onClick={() => updateToggle(tab.id)}
             >
+              <span>{tab.title}</span>
               <FontAwesomeIcon icon={tab.icon} />
             </li>
           ))}

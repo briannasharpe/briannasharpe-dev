@@ -10,7 +10,8 @@ Major
 	 - [ ] perm backend
  - [ ] fade transition/animation
 	 - [ ] hamburger menu
- - [ ] center about section tabs
+ - [x] center about section tabs
+ - [ ] include non-fa icons (image or code)
 
 Minor
  - [ ] to top button
@@ -24,6 +25,7 @@ Ideas
  - [ ] see more → school projects
  - [ ] project sorting
  - [ ] pagewide padding (remove section padding, +look at project module)
+ - [ ] project description split to new line on ///
 
 ## Temp Files
 - `src\context\ThemeContext.jsx`

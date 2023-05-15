@@ -1,9 +1,17 @@
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import classes from './Technologies.module.scss';
+import AdobeAfterEffects from '../Icons/AdobeAfterEffects';
+import AdobeIllustrator from '../Icons/AdobeIllustrator';
+import AdobePhotoshop from '../Icons/AdobePhotoshop';
+import AdobePremiereProects from '../Icons/AdobePremierePro';
+import Figma from '../Icons/Figma';
+import VisualStudioCode from '../Icons/VisualStudioCode';
 
 import { technologies } from '../../constants';
+
+import classes from './Technologies.module.scss';
+
 
 function Technologies({ techArray, size = '1.2rem' }) {
   /* --------------------------- SHOW NAMES ON HOVER -------------------------- */
@@ -28,6 +36,9 @@ function Technologies({ techArray, size = '1.2rem' }) {
   }});
   /* -------------------------------------------------------------------------- */
 
+  /* ------------------------- CHECK FOR NON FA ICONS ------------------------- */
+
+  /* -------------------------------------------------------------------------- */
   return(
     <>
       <div 

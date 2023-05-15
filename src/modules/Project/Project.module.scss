@@ -3,6 +3,8 @@
 @use '../../assets/abstracts/mixins' as *;
 
 .light {
+  padding: 0 2rem;
+  
   .project-container {
     max-width: calc(var.$div-size * 2);
     max-height: calc(var.$div-size * 0.7);
@@ -57,7 +59,7 @@
     }
   }
 
-  @media (max-width: 70em) {
+  @media (max-width: 64em) {
     .project-container {
       flex-direction: column;
       max-height: 100%;
@@ -72,13 +74,15 @@
 }
 
 .dark {
+  padding: 0 2rem;
+  
   .project-container {
     max-width: calc(var.$div-size * 2);
     max-height: calc(var.$div-size * 0.7);
     display: flex;
     gap: 1rem;
     padding: 1rem;
-    background-color: colors.$dark-background-accent;
+    background-color: colors.$dark-background;
     border-radius: var.$rounded;
     @include dark-drop-shadow;
   
@@ -126,9 +130,7 @@
     }
   }
 
-  @media (max-width: 70em) {
-    padding: 2rem;
-
+  @media (max-width: 64em) {
     .project-container {
       flex-direction: column;
       max-height: 100%;

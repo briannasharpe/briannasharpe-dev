@@ -21,7 +21,7 @@ function Intro() {
             </div>
           </div>
           <div className="intro-pic">
-            img
+            <img src="https://media.licdn.com/dms/image/C5603AQG94jKcoa5tTA/profile-displayphoto-shrink_800_800/0/1649988876583?e=1689811200&v=beta&t=uBPeZFBmm1-iWRyTsF3l5iaw0g3X49dZyLHuWhUY9AU" />
           </div>
         </div>
       </section>

@@ -105,15 +105,15 @@
   /* -------------------------------------------------------------------------- */
   .intro-container {
     @include section-container;
-    background-color: colors.$dark-background;
     padding-top: 0;
+    background-color: colors.$dark-background;
     display: flex;
     justify-content: center;
     align-items: center;
 
     .intro-content {
       @include gap;
-      padding: 1rem;
+      // padding: 1rem;
     }
     
     .intro-text {
@@ -133,11 +133,17 @@
     }
     
     .intro-pic {
-      background-color: red;
+      // background-color: red;
       max-width: var.$div-size;
       display: flex;
       justify-content: center;
       align-items: center;
+
+      img {
+        border-radius: 50%;
+        // padding-top: 1rem;
+      }
+        
     }
   }
   /* ---------------------------------- INTRO --------------------------------- */
@@ -148,16 +154,16 @@
   /* -------------------------------------------------------------------------- */
   .about-container {
     @include section-container;
+    min-height: 50vh;
     background-color: colors.$dark-background;
     display: flex;
     justify-content: center;
-    align-items: center;
+    // align-items: center;
+    @include container-header;
 
     .about-content {
       @include gap;
-      // padding: 1rem;
       width: min(80vw, var.$div-size);
-      height: 50vh;
     }
     
     .about-pic {
@@ -173,7 +179,9 @@
       max-height: var.$div-size;
     
       h1 {
-        font-size: var.$header-font-size;
+        // font-size: var.$header-font-size;
+        // padding-bottom: 0.5rem;
+        padding: 0 0 0.5rem 0;
       }
     }
 
@@ -190,6 +198,7 @@
   /* -------------------------------------------------------------------------- */
   .projects-container {
     @include section-container;
+    min-height: 50vh;
     background-color: colors.$dark-background;
     display: flex;
     flex-direction: column;
@@ -198,7 +207,6 @@
     
     .projects-header {
       @include container-header;
-      padding-bottom: 2rem;
     }
     
     .projects-content {
@@ -216,14 +224,16 @@
   /* -------------------------------------------------------------------------- */
   .contact-container {
     @include section-container;
+    min-height: 50vh;
     background-color: colors.$dark-background;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-bottom: 2rem;
+    padding-bottom: var.$navbar-height;
 
     .contact-header {
       @include container-header;
+      text-align: center;
     }
 
     .contact-content {
@@ -304,6 +314,7 @@
     .form-submit {
       display: flex;
       justify-content: center;
+      
       button {
         @include button;
         border: none;
@@ -316,7 +327,7 @@
   /* --------------------------------- CONTACT -------------------------------- */
 
 
-  @media (max-width: 70em) {
+  @media (max-width: 64em) {
     /* -------------------------------------------------------------------------- */
     /*                               NAVBAR (MOBILE)                              */
     /* -------------------------------------------------------------------------- */
@@ -375,7 +386,8 @@
       .close-nav {
         position: absolute;
         top: 1rem;
-        right: 2.4rem;
+        // right: 2.4rem;
+        right: 1.9rem;
         font-size: calc(var.$default-font-size * 1.4);
       }
     }
@@ -386,7 +398,8 @@
     /*                               INTRO (MOBILE)                               */
     /* -------------------------------------------------------------------------- */
     .intro-container {
-      padding-top: 0;
+      padding-top: var.$gap;
+      text-align: center;
 
       .intro-content {
         flex-direction: column-reverse;
@@ -396,41 +409,74 @@
     /* ----------------------------- INTRO (MOBILE) ----------------------------- */
 
 
-  /* -------------------------------------------------------------------------- */
-  /*                               ABOUT (MOBILE)                               */
-  /* -------------------------------------------------------------------------- */
-  .about-container {
-    .about-content {
-      flex-direction: column;
-      padding: 0 2rem;
+    /* -------------------------------------------------------------------------- */
+    /*                               ABOUT (MOBILE)                               */
+    /* -------------------------------------------------------------------------- */
+    .about-container {
+      .about-content {
+        flex-direction: column;
+        padding: 0 2rem;
+      }
+
+      h1 {
+        text-align: center;
+      }
     }
+    /* ----------------------------- ABOUT (MOBILE) ----------------------------- */
+
+
+    /* -------------------------------------------------------------------------- */
+    /*                              PROJECTS (MOBILE)                             */
+    /* -------------------------------------------------------------------------- */
+    /* ---------------------------- PROJECTS (MOBILE) --------------------------- */
+    
+    
+    /* -------------------------------------------------------------------------- */
+    /*                              CONTACT (MOBILE)                              */
+    /* -------------------------------------------------------------------------- */
+    .contact-container {
+      padding-bottom: 1rem;
+      .contact-content {
+        flex-direction: column;
+        padding: 0 2rem 2rem 2rem;
+      }
+
+      .form-container {
+        margin-right: 0.5rem;
+      }
+    }
+    /* ---------------------------- CONTACT (MOBILE) ---------------------------- */
   }
-  /* ----------------------------- ABOUT (MOBILE) ----------------------------- */
 
 
-  /* -------------------------------------------------------------------------- */
-  /*                              PROJECTS (MOBILE)                             */
-  /* -------------------------------------------------------------------------- */
-  .projects-container {
-    .projects-content {
-      padding: 0 2rem;
-    }
-  }
-  /* ---------------------------- PROJECTS (MOBILE) --------------------------- */
+  @media (max-width: 40em) {
+    /* -------------------------------------------------------------------------- */
+    /*                               NAVBAR (MOBILE)                              */
+    /* -------------------------------------------------------------------------- */
+    /* ----------------------------- NAVBAR (MOBILE) ---------------------------- */
 
 
-  /* -------------------------------------------------------------------------- */
-  /*                              CONTACT (MOBILE)                              */
-  /* -------------------------------------------------------------------------- */
-  .contact-container {
-    .contact-content {
-      flex-direction: column;
-      padding: 2rem;
-    }
-    .form-container {
-      margin-right: 0.5rem;
-    }
-  }
-  /* ---------------------------- CONTACT (MOBILE) ---------------------------- */
+    /* -------------------------------------------------------------------------- */
+    /*                               INTRO (MOBILE)                               */
+    /* -------------------------------------------------------------------------- */
+    /* ----------------------------- INTRO (MOBILE) ----------------------------- */
+
+
+    /* -------------------------------------------------------------------------- */
+    /*                               ABOUT (MOBILE)                               */
+    /* -------------------------------------------------------------------------- */
+    /* ----------------------------- ABOUT (MOBILE) ----------------------------- */
+
+
+    /* -------------------------------------------------------------------------- */
+    /*                              PROJECTS (MOBILE)                             */
+    /* -------------------------------------------------------------------------- */
+    /* ---------------------------- PROJECTS (MOBILE) --------------------------- */
+
+
+    /* -------------------------------------------------------------------------- */
+    /*                              CONTACT (MOBILE)                              */
+    /* -------------------------------------------------------------------------- */
+    /* ---------------------------- CONTACT (MOBILE) ---------------------------- */
   }
 }

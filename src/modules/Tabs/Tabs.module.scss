@@ -7,15 +7,22 @@
     ul {
       list-style: none;
       display: flex;
-      padding-bottom: 1.2rem;
+      flex-wrap: wrap;
     }
-  
+    
     .tabs-heading {
       li {
         cursor: pointer;
         @include fade;
         position: relative;
-        width: 2rem;
+        width: 6rem;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 1.2rem;
+
+        span {
+          margin-right: 0.3rem;
+        }
     
         &:before {
           content: "";
@@ -24,7 +31,7 @@
           // width: 1.2rem;
           // height: 0.3rem;
           // border-radius: var.$rounded;
-          width: 2rem;
+          width: inherit;
           height: 0.1rem;
           top: 1.5rem;
         }
@@ -57,6 +64,88 @@
   
     .tabs-show-content {
       display: inline;
+    }
+  }
+
+  @media (max-width: 64em) {
+    .tabs-container {
+      #heading {
+        justify-content: center;
+      }
+    }
+  }
+}
+
+.dark {
+  .tabs-container {
+    ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
+    .tabs-heading {
+      li {
+        cursor: pointer;
+        @include fade;
+        position: relative;
+        width: 6rem;
+        display: flex;
+        justify-content: center;
+        padding-bottom: 1.2rem;
+
+        span {
+          margin-right: 0.3rem;
+        }
+    
+        &:before {
+          content: "";
+          background: colors.$dark-background-accent;
+          position: absolute;
+          // width: 1.2rem;
+          // height: 0.3rem;
+          // border-radius: var.$rounded;
+          width: inherit;
+          height: 0.1rem;
+          top: 1.5rem;
+        }
+  
+        &:before.active {
+          background: colors.$red-accent;
+        }
+        
+        &:hover {
+          color: colors.$red-accent;
+        }
+      }
+  
+      .active {
+        color: colors.$red-accent;
+  
+        &:before {
+          background: colors.$red-accent;
+        }
+      }
+  
+      .inactive {
+        color: colors.$dark-background-accent;
+      }
+    }
+  
+    .tabs-content {
+      display: none;
+    }
+  
+    .tabs-show-content {
+      display: inline;
+    }
+  }
+
+  @media (max-width: 64em) {
+    .tabs-container {
+      ul {
+        justify-content: center;
+      }
     }
   }
 }

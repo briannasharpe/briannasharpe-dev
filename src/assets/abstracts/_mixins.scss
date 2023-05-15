@@ -27,7 +27,7 @@
 @mixin navbar-container {
   height: var.$navbar-height;
 
-  @media (max-width: 70em) {
+  @media (max-width: 64em) {
     height: var.$mobile-navbar-height;
   }
 }
@@ -37,8 +37,9 @@
   min-height: var.$section-height;
   padding-top: var.$navbar-height;
 
-  @media (max-width: 70em) {
-    min-height: var.$mobile-section-height;
+  @media (max-width: 64em) {
+    min-height: 50vh;
+    // min-height: var.$mobile-section-height;
     padding-top: var.$mobile-navbar-height;
   }
 }
@@ -56,7 +57,7 @@
     padding-bottom: 1rem;
   }
   
-  @media (max-width: 70em) {
+  @media (max-width: 64em) {
     h1 {
       // font-size: calc(var.$header-font-size * 0.8);
       padding: 0 2rem;
@@ -77,6 +78,7 @@
   font-weight: 700;
   font-size: var.$subtext-font-size;
   color: colors.$white;
+  @include fade;
     
   &:link {
     color: colors.$white;
