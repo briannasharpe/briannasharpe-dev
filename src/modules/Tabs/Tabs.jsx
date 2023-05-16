@@ -14,7 +14,7 @@ function Tabs({ contentArray, currentTheme }) {
     <>
     <div className={classes[`${currentTheme}`]}>
       <div className={classes['tabs-container']}>
-        <ul className={classes['tabs-heading']} id={classes['heading']}>
+        <ul className={classes['tabs-heading']}>
           {contentArray.map((tab) => (
             <li
               key={tab.id}

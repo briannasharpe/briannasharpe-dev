@@ -1,7 +1,4 @@
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Technologies from '../Technologies/Technologies';
-
-import { technologies } from '../../constants';
 
 import classes from './AboutTechStack.module.scss';
 
@@ -29,7 +26,25 @@ function AboutTechStack() {
 
   let tooling_software = [
     {
+      id: "VisualStudioCode",
+    },
+    {
       id: "Git",
+    },
+    {
+      id: "AdobePhotoshop",
+    },
+    {
+      id: "AdobeIllustrator",
+    },
+    {
+      id: "AdobePremierePro",
+    },
+    {
+      id: "AdobeAfterEffects",
+    },
+    {
+      id: "Figma",
     },
   ];
 
@@ -53,17 +68,26 @@ function AboutTechStack() {
 
   return(
     <>
-    {/* <h2>as</h2> */}
-      Languages
-      <Technologies techArray={languages} size='2.5rem' />
-      Frameworks/Libraries
-      <Technologies techArray={frameworks_libraries} size='2.5rem' />
-      Tooling/Software
-      <Technologies techArray={tooling_software} size='2.5rem' />
-      Services
-      <Technologies techArray={services} size='2.5rem' />
-      Platforms
-      <Technologies techArray={platforms} size='2.5rem' />
+      <div className={classes['tech-row']}>
+        <h2>Languages</h2>
+        <Technologies techArray={languages} size='2.5rem' />
+      </div>
+      <div className={classes['tech-row']}>
+        <h2>Frameworks/Libraries</h2>
+        <Technologies techArray={frameworks_libraries} size='2.5rem' />
+      </div>
+      <div className={classes['tech-row']} id={classes.tooling}>
+        <h2>Tooling/Software</h2>
+        <Technologies techArray={tooling_software} size='2.5rem' />
+      </div>
+      <div className={classes['tech-row']}>
+        <h2>Services</h2>
+        <Technologies techArray={services} size='2.5rem' />
+      </div>
+      <div className={classes['tech-row']}>
+        <h2>Platforms</h2>
+        <Technologies techArray={platforms} size='2.5rem' />
+      </div>
     </>
   );
 }

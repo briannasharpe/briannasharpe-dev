@@ -1,15 +1,17 @@
 @use '../../assets/abstracts/variables' as var;
+@use '../../assets/abstracts/mixins' as *;
 
 .tech {
-  width: inherit;
+  // width: inherit;
   
   ul {
     list-style: none;
     display: inline-flex;
     flex-wrap: wrap;
     gap: 1rem;
+    justify-content: center;
   }
-
+  
   span {
     font-size: var.$default-font-size;
     position: relative;

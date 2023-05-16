@@ -105,6 +105,7 @@
   /* -------------------------------------------------------------------------- */
   .intro-container {
     @include section-container;
+    min-height: var.$section-height;
     padding-top: 0;
     background-color: colors.$dark-background;
     display: flex;
@@ -154,16 +155,17 @@
   /* -------------------------------------------------------------------------- */
   .about-container {
     @include section-container;
-    min-height: 50vh;
+    // min-height: 50vh;
     background-color: colors.$dark-background;
     display: flex;
     justify-content: center;
-    // align-items: center;
+    align-items: center;
     @include container-header;
+    text-align: center;
 
     .about-content {
       @include gap;
-      width: min(80vw, var.$div-size);
+      // min-width: min(80vw, var.$div-size);
     }
     
     .about-pic {
@@ -176,7 +178,7 @@
     
     .about-text {
       max-width: var.$div-size;
-      max-height: var.$div-size;
+      // max-height: var.$div-size;
     
       h1 {
         // font-size: var.$header-font-size;
@@ -198,7 +200,7 @@
   /* -------------------------------------------------------------------------- */
   .projects-container {
     @include section-container;
-    min-height: 50vh;
+    // min-height: 50vh;
     background-color: colors.$dark-background;
     display: flex;
     flex-direction: column;
@@ -224,7 +226,7 @@
   /* -------------------------------------------------------------------------- */
   .contact-container {
     @include section-container;
-    min-height: 50vh;
+    // min-height: 50vh;
     background-color: colors.$dark-background;
     display: flex;
     flex-direction: column;
@@ -418,9 +420,9 @@
         padding: 0 2rem;
       }
 
-      h1 {
-        text-align: center;
-      }
+      // h1 {
+      //   text-align: center;
+      // }
     }
     /* ----------------------------- ABOUT (MOBILE) ----------------------------- */
 

@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import AdobeAfterEffects from '../Icons/AdobeAfterEffects';
 import AdobeIllustrator from '../Icons/AdobeIllustrator';
 import AdobePhotoshop from '../Icons/AdobePhotoshop';
-import AdobePremiereProects from '../Icons/AdobePremierePro';
+import AdobePremierePro from '../Icons/AdobePremierePro';
 import Figma from '../Icons/Figma';
 import VisualStudioCode from '../Icons/VisualStudioCode';
 
@@ -16,6 +16,7 @@ import classes from './Technologies.module.scss';
 function Technologies({ techArray, size = '1.2rem' }) {
   /* --------------------------- SHOW NAMES ON HOVER -------------------------- */
   const [isHovering, setIsHovering] = useState(false);
+  const [lineHeight, setLlneHeight] = useState();
 
   const handleMouseOver = () => {
     setIsHovering(true);
@@ -25,6 +26,7 @@ function Technologies({ techArray, size = '1.2rem' }) {
     setIsHovering(false);
   };
   /* -------------------------------------------------------------------------- */
+
 
   /* -------------------- GET TECH ARRAY FROM TECHNOLOGIES -------------------- */
   let finalTech = [];
@@ -36,9 +38,29 @@ function Technologies({ techArray, size = '1.2rem' }) {
   }});
   /* -------------------------------------------------------------------------- */
 
-  /* ------------------------- CHECK FOR NON FA ICONS ------------------------- */
 
   /* -------------------------------------------------------------------------- */
+  /*                             GET FA/NON-FA ICON                             */
+  /* -------------------------------------------------------------------------- */
+  const getIconType = (tech) => {
+    if (tech.id === 'AdobeAfterEffects') {
+      return <AdobeAfterEffects />
+    } else if (tech.id === 'AdobeIllustrator') {
+      return <AdobeIllustrator />
+    } else if (tech.id === 'AdobePhotoshop') {
+      return <AdobePhotoshop />
+    } else if (tech.id === 'AdobePremierePro') {
+      return <AdobePremierePro />
+    } else if (tech.id === 'Figma') {
+      return <Figma />
+    } else if (tech.id === 'VisualStudioCode') {
+      return <VisualStudioCode />
+    } else {
+      return <FontAwesomeIcon icon={tech.icon} />
+    }
+  }
+  /* -------------------------------------------------------------------------- */
+
   return(
     <>
       <div 
@@ -52,9 +74,9 @@ function Technologies({ techArray, size = '1.2rem' }) {
               key={tech.id}
               style={{color: tech.color, fontSize: size}}
             >
-              {isHovering === false && <FontAwesomeIcon icon={tech.icon} />}
+              {isHovering === false && getIconType(tech)}
+              {/* {isHovering === false && <FontAwesomeIcon icon={tech.icon} />} */}
               {isHovering && <span>{tech.id}</span>}
-              {/* <span>{tech.id}</span> */}
             </li>
           ))}
         </ul>
