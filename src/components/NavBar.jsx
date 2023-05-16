@@ -60,9 +60,6 @@ function NavBar({ currentTheme, changeTheme }) {
           </div>
           
           {/* ---------------------------- MOBILE NAV BUTTON --------------------------- */}
-          {/* <button className="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
-            <FontAwesomeIcon icon="fa-solid fa-bars" />
-          </button> */}
           <div className="mobile-nav-toggle">
             <span className="sr-only">Menu</span>
             <FontAwesomeIcon 
@@ -85,16 +82,6 @@ function NavBar({ currentTheme, changeTheme }) {
                 <ThemeToggleButton currentTheme={currentTheme} changeTheme={changeTheme}/>
               </li>
             </ul>
-
-            {/* <div className={classes['navbar-links-mobile']}>
-              <FontAwesomeIcon icon="fa-solid fa-bars" />
-              <img
-                src={toggle ? close : menu}
-                alt="menu"
-                className=""
-                onClick={() => setToggle(!toggle)}
-              />
-            </div> */}
           </div>
         </div>
       </nav>

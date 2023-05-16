@@ -16,7 +16,6 @@ import classes from './Technologies.module.scss';
 function Technologies({ techArray, size = '1.2rem' }) {
   /* --------------------------- SHOW NAMES ON HOVER -------------------------- */
   const [isHovering, setIsHovering] = useState(false);
-  const [lineHeight, setLlneHeight] = useState();
 
   const handleMouseOver = () => {
     setIsHovering(true);
@@ -75,7 +74,6 @@ function Technologies({ techArray, size = '1.2rem' }) {
               style={{color: tech.color, fontSize: size}}
             >
               {isHovering === false && getIconType(tech)}
-              {/* {isHovering === false && <FontAwesomeIcon icon={tech.icon} />} */}
               {isHovering && <span>{tech.id}</span>}
             </li>
           ))}

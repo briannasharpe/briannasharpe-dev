@@ -85,14 +85,6 @@
       }
     }
     
-    // .navbar-links-active {
-    //   color: green; 
-    // }
-    
-    // .navbar-links-inactive {
-    //   color: white;
-    // }
-    
     .mobile-nav-toggle {
       display: none;
     }
@@ -114,7 +106,6 @@
 
     .intro-content {
       @include gap;
-      // padding: 1rem;
     }
     
     .intro-text {
@@ -134,7 +125,6 @@
     }
     
     .intro-pic {
-      // background-color: red;
       max-width: var.$div-size;
       display: flex;
       justify-content: center;
@@ -142,7 +132,6 @@
 
       img {
         border-radius: 50%;
-        // padding-top: 1rem;
       }
         
     }
@@ -155,7 +144,6 @@
   /* -------------------------------------------------------------------------- */
   .about-container {
     @include section-container;
-    // min-height: 50vh;
     background-color: colors.$dark-background;
     display: flex;
     justify-content: center;
@@ -165,7 +153,6 @@
 
     .about-content {
       @include gap;
-      // min-width: min(80vw, var.$div-size);
     }
     
     .about-pic {
@@ -178,11 +165,8 @@
     
     .about-text {
       max-width: var.$div-size;
-      // max-height: var.$div-size;
     
       h1 {
-        // font-size: var.$header-font-size;
-        // padding-bottom: 0.5rem;
         padding: 0 0 0.5rem 0;
       }
     }
@@ -200,7 +184,6 @@
   /* -------------------------------------------------------------------------- */
   .projects-container {
     @include section-container;
-    // min-height: 50vh;
     background-color: colors.$dark-background;
     display: flex;
     flex-direction: column;
@@ -214,7 +197,6 @@
     .projects-content {
       @include gap;
       flex-direction: column;
-      // padding-top: 1rem;
     }
   }
   
@@ -226,7 +208,6 @@
   /* -------------------------------------------------------------------------- */
   .contact-container {
     @include section-container;
-    // min-height: 50vh;
     background-color: colors.$dark-background;
     display: flex;
     flex-direction: column;
@@ -419,10 +400,6 @@
         flex-direction: column;
         padding: 0 2rem;
       }
-
-      // h1 {
-      //   text-align: center;
-      // }
     }
     /* ----------------------------- ABOUT (MOBILE) ----------------------------- */
 

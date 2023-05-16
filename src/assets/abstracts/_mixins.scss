@@ -34,12 +34,9 @@
 
 @mixin section-container {
   width: 100%;
-  // min-height: var.$section-height;
   padding-top: var.$navbar-height;
 
   @media (max-width: 64em) {
-    // min-height: 50vh;
-    // min-height: var.$mobile-section-height;
     padding-top: var.$mobile-navbar-height;
   }
 }
@@ -52,14 +49,12 @@
 @mixin container-header {
   h1 {
     font-size: var.$header-font-size;
-    // padding: 1rem 0;
     margin-top: 1rem;
     padding-bottom: 1rem;
   }
   
   @media (max-width: 64em) {
     h1 {
-      // font-size: calc(var.$header-font-size * 0.8);
       padding: 0 2rem;
       padding-bottom: 1rem;
     }

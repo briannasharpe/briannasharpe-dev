@@ -3,25 +3,17 @@
 
 ## To-do:
 Major
- - [x] dark/light mode
- 	 - [ ] save theme on refresh
- - [x] contact form
-   - [ ] temp backend (github)
-	 - [ ] perm backend
- - [ ] fade transition/animation
-	 - [ ] hamburger menu
- - [x] include non-fa icons (image or code)
-	- [x] tech height when hovered over long list of icons
+ - [] save theme on refresh
+ - [] contact form backend
+ - [ ] hamburger menu animation/transition
  - [ ] about section formatting
 
 Minor
  - [ ] to top button
- - [ ] link title styling
- - [ ] navbar active class
  - [ ] address bar change on section scroll
- - [x] tabs in about section (text, tech, experience) (completed two commits ago)
- - [x] contact header spacing (pc/mobile view both different) (completed three commits ago)
  - [ ] mobile view on very thin screens
+ - [ ] navbar active class
+ - [ ] link title styling
 
 Ideas
  - [ ] see more → school projects
@@ -32,3 +24,4 @@ Ideas
 
 ## Temp Files
 - `src\context\ThemeContext.jsx`
+- `src\index.scss`
