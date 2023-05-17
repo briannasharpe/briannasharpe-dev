@@ -42,7 +42,7 @@ function NavBar({ currentTheme, changeTheme }) {
 
   return(
     <>
-    {menu}
+      {menu}
       <nav className="navbar-container">
         <div className="navbar-items">
           <div className="navbar-logo">

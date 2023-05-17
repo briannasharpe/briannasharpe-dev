@@ -41,6 +41,7 @@
       justify-content: center;
       flex-basis: 50%;
       text-align: center;
+      padding: 0 1rem;
     
       h2 {
         padding: 1rem;
@@ -82,7 +83,7 @@
     display: flex;
     gap: 1rem;
     padding: 1rem;
-    background-color: colors.$dark-background;
+    background-color: colors.$dark-background-accent;
     border-radius: var.$rounded;
     @include dark-drop-shadow;
   
@@ -112,6 +113,7 @@
       justify-content: center;
       flex-basis: 50%;
       text-align: center;
+      padding: 0 1rem;
     
       h2 {
         padding: 1rem;

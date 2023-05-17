@@ -3,14 +3,13 @@
 
 ## To-do:
 Major
- - [] save theme on refresh
- - [] contact form backend
- - [ ] hamburger menu animation/transition
+ - [ ] save theme on refresh
+ - [ ] contact form backend
  - [ ] about section formatting
+ - [ ] hamburger menu animation/transition
 
 Minor
- - [ ] to top button
- - [ ] address bar change on section scroll
+ - [x] to top button
  - [ ] mobile view on very thin screens
  - [ ] navbar active class
  - [ ] link title styling
@@ -21,6 +20,7 @@ Ideas
  - [ ] pagewide padding (remove section padding, +look at project module)
  - [ ] project description split to new line on ///
  - [ ] remove center formatting → left
+ - [ ] address bar change on section scroll
 
 ## Temp Files
 - `src\context\ThemeContext.jsx`
