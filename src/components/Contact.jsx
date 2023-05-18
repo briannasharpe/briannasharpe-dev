@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import InfoRow from '../modules/InfoRow/InfoRow';
 import DateTime from '../modules/DateTime/DateTime';
 
-import { introLinks, contactInfo } from '../constants';
+import { introLinks, contactInfo } from '../constants/sensitive';
 
 function Contact() {
   return(

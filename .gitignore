@@ -24,4 +24,4 @@ dist-ssr
 *.sw?
 
 # Private files
-src/constants/index.js
+src/constants/sensitive.js
