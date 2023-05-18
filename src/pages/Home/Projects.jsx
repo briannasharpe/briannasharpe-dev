@@ -1,6 +1,6 @@
-import Project from '../modules/Project/Project';
+import Project from './Projects/Project';
 
-import { projectData } from '../constants';
+import { projectData } from '../../constants';
 
 function Projects({ currentTheme }) {
   return(

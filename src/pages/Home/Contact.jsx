@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import InfoRow from '../modules/InfoRow/InfoRow';
-import DateTime from '../modules/DateTime/DateTime';
+import InfoRow from '../../components/InfoRow/InfoRow';
+import DateTime from '../../components/DateTime/DateTime';
 
-import { introLinks, contactInfo } from '../constants/sensitive';
+import { introLinks, contactInfo } from '../../constants/sensitive';
 
 function Contact() {
   return(

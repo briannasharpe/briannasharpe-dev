@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { NavHashLink } from 'react-router-hash-link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import ThemeToggleButton from '../modules/ThemeToggleButton/ThemeToggleButton';
+import ThemeToggleButton from '../components/ThemeToggleButton/ThemeToggleButton';
 
 import { navLinks } from '../constants';
 

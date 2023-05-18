@@ -3,11 +3,11 @@ import { BrowserRouter } from 'react-router-dom';
 
 // import { ThemeContext, ThemeProvider } from './context/ThemeContext'
 import NavBar from './components/NavBar';
-import Intro from './components/Intro';
-import About from './components/About';
-import Projects from './components/Projects';
-import Contact from './components/Contact';
-import BackToTopButton from './modules/BackToTopButton/BackToTopButton';
+import Intro from './pages/Home/Intro';
+import About from './pages/Home/About';
+import Projects from './pages/Home/Projects';
+import Contact from './pages/Home/Contact';
+import BackToTopButton from './components/BackToTopButton/BackToTopButton';
 
 import './App.scss';
 

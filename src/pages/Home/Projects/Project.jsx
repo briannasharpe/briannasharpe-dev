@@ -1,5 +1,5 @@
-import Button from '../Button/Button';
-import Technologies from '../Technologies/Technologies';
+import Button from '../../../components/Button/Button';
+import Technologies from '../../../components/Technologies/Technologies';
 
 import classes from './Project.module.scss';
 

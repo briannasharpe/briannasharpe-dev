@@ -1,6 +1,6 @@
-import Tabs from '../modules/Tabs/Tabs';
-import AboutInfo from '../modules/AboutSection/AboutInfo';
-import AboutTechStack from '../modules/AboutSection/AboutTechStack';
+import Tabs from '../../components/Tabs/Tabs';
+import AboutInfo from './About/AboutInfo';
+import AboutTechStack from './About/AboutTechStack';
 
 function About({ currentTheme }) {
   let tabArray = [

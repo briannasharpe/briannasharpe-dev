@@ -1,4 +1,4 @@
-import Technologies from '../Technologies/Technologies';
+import Technologies from '../../../components/Technologies/Technologies';
 
 import classes from './AboutTechStack.module.scss';
 
