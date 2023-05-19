@@ -1,0 +1,49 @@
+@use '../../assets/abstracts/variables' as var;
+@use '../../assets/abstracts/colors' as colors;
+@use '../../assets/abstracts/mixins' as *;
+
+.light {
+  .squares-container {
+    width: 9.5rem;
+    aspect-ratio: 1;
+    padding: 1rem;
+    // padding: 1.5rem 1rem;
+    background-color: colors.$light-background;
+    @include light-drop-shadow;
+    border-radius: var.$rounded;
+    overflow: scroll;
+    overflow-x: hidden;
+
+    h2 {
+      font-size: 1.2rem;
+      padding-bottom: 1rem;
+    }
+    span {
+      // font-size: var.$default-font-size;
+      // font-size: 1rem;
+    }
+  }
+}
+
+.dark {
+  .squares-container {
+    width: 9.5rem;
+    aspect-ratio: 1;
+    padding: 1rem;
+    // padding: 1.5rem 1rem;
+    background-color: colors.$dark-background-accent;
+    @include dark-drop-shadow;
+    border-radius: var.$rounded;
+    overflow: scroll;
+    overflow-x: hidden;
+
+    h2 {
+      font-size: 1.2rem;
+      padding-bottom: 1rem;
+    }
+    span {
+      // font-size: var.$default-font-size;
+      // font-size: 1rem;
+    }
+  }
+}

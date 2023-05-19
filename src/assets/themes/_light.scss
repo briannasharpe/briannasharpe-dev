@@ -4,6 +4,8 @@
 
 .light {
   color: colors.$light-primary-text;
+  background-color: colors.$light-background;
+  // padding: 0 2rem;
 
   /* -------------------------------------------------------------------------- */
   /*                                   NAVBAR                                   */
@@ -11,15 +13,19 @@
   .navbar-container {
     @include navbar-container;
     background-color: colors.$light-background;
-    position: sticky;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    display: flex;
     border-bottom: 0.1rem solid colors.$light-background-accent;
     @include light-drop-shadow;
+    position: fixed;
+    // // position: sticky;
+    display: flex;
+    width: 100%;
     z-index: 100;
+    // top: 0;
+    // // left: 0;
+    // // right: 0;
+    // align-items: center;
+    // // margin: 0;
+    // margin: 0 0;
 
     .navbar-items {
       display: flex;
@@ -98,8 +104,8 @@
   .intro-container {
     @include section-container;
     min-height: var.$section-height;
-    padding-top: 0;
-    background-color: colors.$light-background;
+    // padding-top: 0;
+    // background-color: colors.$light-background;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -109,7 +115,7 @@
     }
     
     .intro-text {
-      max-width: var.$div-size;
+      // max-width: var.$div-size;
     
       h1 {
         font-size: 4rem;
@@ -125,7 +131,7 @@
     }
     
     .intro-pic {
-      max-width: var.$div-size;
+      // max-width: var.$div-size;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -144,35 +150,40 @@
   /* -------------------------------------------------------------------------- */
   .about-container {
     @include section-container;
-    background-color: colors.$light-background;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    @include container-header;
-    text-align: center;
+    // background-color: colors.$light-background;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // text-align: center;
+    align-items: flex-start;
+    
+    .about-header {
+      @include container-header;
 
-    .about-content {
-      @include gap;
-    }
-    
-    .about-pic {
-      background-color: green;
-      max-width: var.$div-size;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    
-    .about-text {
-      max-width: var.$div-size;
-    
       h1 {
-        padding: 0 0 0.5rem 0;
+        // padding: 0 0 0.5rem 0;
       }
     }
 
-    .about-links {
-      padding: 1rem 0;
+    .about-content {
+      @include gap;
+      // align-items: flex-start;
+
+      // .about-pic {
+      //   background-color: green;
+        // max-width: var.$div-size;
+      //   display: flex;
+      //   justify-content: center;
+      //   align-items: center;
+      // }
+      
+      // .about-text {
+        // max-width: var.$div-size;
+      // }
+  
+      .about-links {
+        padding: 1rem 0;
+      }
     }
   }
 
@@ -184,11 +195,11 @@
   /* -------------------------------------------------------------------------- */
   .projects-container {
     @include section-container;
-    background-color: colors.$light-background;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    // background-color: colors.$light-background;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
     
     .projects-header {
       @include container-header;
@@ -208,10 +219,10 @@
   /* -------------------------------------------------------------------------- */
   .contact-container {
     @include section-container;
-    background-color: colors.$light-background;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    // background-color: colors.$light-background;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: center;
     padding-bottom: var.$navbar-height;
 
     .contact-header {
@@ -240,7 +251,7 @@
     }
     
     .form-container {
-      max-width: var.$div-size;
+      // max-width: var.$div-size;
   
       form {
         width: 95%;

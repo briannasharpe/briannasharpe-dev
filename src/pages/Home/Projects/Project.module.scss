@@ -3,10 +3,12 @@
 @use '../../../assets/abstracts/mixins' as *;
 
 .light {
-  padding: 0 2rem;
+  // padding: 0 2rem;
   
   .project-container {
-    max-width: calc(var.$div-size * 2);
+    // max-width: calc(var.$div-size * 2);
+    // max-width: inherit;
+    // width: 100%;
     max-height: calc(var.$div-size * 0.7);
     display: flex;
     gap: 1rem;
@@ -75,10 +77,12 @@
 }
 
 .dark {
-  padding: 0 2rem;
+  // padding: 0 2rem;
   
   .project-container {
-    max-width: calc(var.$div-size * 2);
+    // max-width: calc(var.$div-size * 2);
+    // max-width: inherit;
+    // width: 100%;
     max-height: calc(var.$div-size * 0.7);
     display: flex;
     gap: 1rem;

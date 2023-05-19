@@ -33,7 +33,14 @@
 }
 
 @mixin section-container {
-  width: 100%;
+  // width: 100%;
+  max-width: 50rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 2rem;
   padding-top: var.$navbar-height;
 
   @media (max-width: 64em) {
@@ -47,6 +54,8 @@
 }
 
 @mixin container-header {
+  align-self: flex-start;
+
   h1 {
     font-size: var.$header-font-size;
     margin-top: 1rem;
