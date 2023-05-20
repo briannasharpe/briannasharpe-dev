@@ -2,150 +2,81 @@
 @use '../../../assets/abstracts/colors' as colors;
 @use '../../../assets/abstracts/mixins' as *;
 
-.light {
-  // padding: 0 2rem;
+@mixin theme($name, $background, $background-accent, $highlight, $primary-text, $secondary-text) {
+  .#{$name} {
+    // padding: 0 2rem;
   
-  .project-container {
-    // max-width: calc(var.$div-size * 2);
-    // max-width: inherit;
-    // width: 100%;
-    max-height: calc(var.$div-size * 0.7);
-    display: flex;
-    gap: 1rem;
-    padding: 1rem;
-    background-color: colors.$light-background;
-    border-radius: var.$rounded;
-    @include light-drop-shadow;
-  
-    .project-image {
-      display: flex;
-      justify-content: center;
-      flex-basis: 50%;
-      overflow: hidden;
-      border-radius: var.$rounded;
-    
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: top center;
-        transition: all 10s ease-in-out;
-      }
-    
-      &:hover img {
-        object-position: bottom center;
-      }
-    }
-    
-    .project-info {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      flex-basis: 50%;
-      text-align: center;
-      padding: 0 1rem;
-    
-      h2 {
-        padding: 1rem;
-      }
-    }
-
-    .project-tech-container {
-      padding-top: 1rem;
-    }
-    
-    .project-button-container {
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-      padding: 1rem 0;
-    }
-  }
-
-  @media (max-width: 64em) {
     .project-container {
-      flex-direction: column;
-      max-height: 100%;
-
+      // max-width: calc(var.$div-size * 2);
+      // max-width: inherit;
+      // width: 100%;
+      max-height: calc(var.$div-size * 0.7);
+      display: flex;
+      gap: 1rem;
+      padding: 1rem;
+      background-color: $highlight;
+      border-radius: var.$rounded;
+      @include drop-shadow($background-accent);
+    
       .project-image {
-        max-height: 50vh;
-        overflow: scroll;
-        overflow-x: hidden;
+        display: flex;
+        justify-content: center;
+        flex-basis: 50%;
+        overflow: hidden;
+        border-radius: var.$rounded;
+      
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          object-position: top center;
+          transition: all 10s ease-in-out;
+        }
+      
+        &:hover img {
+          object-position: bottom center;
+        }
+      }
+      
+      .project-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-basis: 50%;
+        text-align: center;
+        padding: 0 1rem;
+      
+        h2 {
+          padding: 1rem;
+        }
+      }
+
+      .project-tech-container {
+        padding-top: 1rem;
+      }
+      
+      .project-button-container {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        padding: 1rem 0;
+      }
+    }
+
+    @media (max-width: 64em) {
+      .project-container {
+        flex-direction: column;
+        max-height: 100%;
+
+        .project-image {
+          max-height: 50vh;
+          overflow: scroll;
+          overflow-x: hidden;
+        }
       }
     }
   }
 }
 
-.dark {
-  // padding: 0 2rem;
-  
-  .project-container {
-    // max-width: calc(var.$div-size * 2);
-    // max-width: inherit;
-    // width: 100%;
-    max-height: calc(var.$div-size * 0.7);
-    display: flex;
-    gap: 1rem;
-    padding: 1rem;
-    background-color: colors.$dark-background-accent;
-    border-radius: var.$rounded;
-    @include dark-drop-shadow;
-  
-    .project-image {
-      display: flex;
-      justify-content: center;
-      flex-basis: 50%;
-      overflow: hidden;
-      border-radius: var.$rounded;
-    
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: top center;
-        transition: all 10s ease-in-out;
-      }
-    
-      &:hover img {
-        object-position: bottom center;
-      }
-    }
-    
-    .project-info {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      flex-basis: 50%;
-      text-align: center;
-      padding: 0 1rem;
-    
-      h2 {
-        padding: 1rem;
-      }
-    }
-
-    .project-tech-container {
-      padding-top: 1rem;
-    }
-    
-    .project-button-container {
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
-      padding: 1rem 0;
-    }
-  }
-
-  @media (max-width: 64em) {
-    .project-container {
-      flex-direction: column;
-      max-height: 100%;
-
-      .project-image {
-        max-height: 50vh;
-        overflow: scroll;
-        overflow-x: hidden;
-      }
-    }
-  }
-}
+@include theme('light', colors.$light-background, colors.$light-background-accent, colors.$light-highlight, colors.$light-primary-text, colors.$light-secondary-text);
+@include theme('dark', colors.$dark-background, colors.$dark-background-accent, colors.$dark-highlight, colors.$dark-primary-text, colors.$dark-secondary-text);

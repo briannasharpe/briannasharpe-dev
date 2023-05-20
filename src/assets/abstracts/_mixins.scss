@@ -122,23 +122,13 @@
     }
 }
 
+@mixin drop-shadow($color) {
+  filter: drop-shadow(0 0 0.3rem $color);
+}
+
 /* ------------------------------- TRANSITION ------------------------------- */
 @mixin fade {
   transition: all 0.3s linear;
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;
-}
-
-/* -------------------------------------------------------------------------- */
-/*                               THEME SPECIFIC                               */
-/* -------------------------------------------------------------------------- */
-
-/* ------------------------------- LIGHT MODE ------------------------------- */
-@mixin light-drop-shadow {
-  filter: drop-shadow(0 0 0.3rem colors.$light-background-accent);
-}
-
-/* -------------------------------- DARK MODE ------------------------------- */
-@mixin dark-drop-shadow {
-  filter: drop-shadow(0 0 0.3rem colors.$dark-background-accent);
 }

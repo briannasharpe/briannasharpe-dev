@@ -12,6 +12,7 @@ $red-accent-hover: #ec273d;
 /* ------------------------------- LIGHT MODE ------------------------------- */
 $light-background: $white;
 $light-background-accent: #e9e7fc;
+$light-highlight: $light-background;
 $light-primary-text: $black;
 $light-secondary-text: $black;
 
@@ -19,5 +20,6 @@ $light-secondary-text: $black;
 $dark-background: #2e2d52;
 // $dark-background-accent: #29284d;
 $dark-background-accent: #1e1d40;
+$dark-highlight: $dark-background-accent;
 $dark-primary-text: $white;
 $dark-secondary-text: $white;

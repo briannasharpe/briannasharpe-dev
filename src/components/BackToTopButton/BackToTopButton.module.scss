@@ -2,76 +2,44 @@
 @use '../../assets/abstracts/colors' as colors;
 @use '../../assets/abstracts/mixins' as *;
 
-.light {
-  .back-to-top-button {
-    position: fixed;
-    bottom: 1.8rem;
-    right: 2rem;
-    
-    button {
-      // @include button;
-      @include fade;
-      background: transparent;
-      color: colors.$light-primary-text;
-      border: none;
-      // font-size: var.$default-font-size;
-      font-size: 1.5rem;
-
-      &:hover {
-        opacity: 100%;
-        color: colors.$red-accent;
-        background: transparent;
-      }
-      &:active {
-        background: transparent;
-      }
-    }
-  }
-
-  @media (max-width: 64em) {
+@mixin theme($name, $background, $background-accent, $highlight, $primary-text, $secondary-text) {
+  .#{$name} {
     .back-to-top-button {
-      bottom: 1.4rem;
+      position: fixed;
+      bottom: 1.8rem;
+      right: 2rem;
       
       button {
-        font-size: 2rem;
+        // @include button;
+        @include fade;
+        background: transparent;
+        color: $primary-text;
+        border: none;
+        // font-size: var.$default-font-size;
+        font-size: 1.5rem;
+  
+        &:hover {
+          opacity: 100%;
+          color: colors.$red-accent;
+          background: transparent;
+        }
+        &:active {
+          background: transparent;
+        }
+      }
+    }
+  
+    @media (max-width: 64em) {
+      .back-to-top-button {
+        bottom: 1.4rem;
+        
+        button {
+          font-size: 2rem;
+        }
       }
     }
   }
 }
 
-.dark {
-  .back-to-top-button {
-    position: fixed;
-    bottom: 1.8rem;
-    right: 2rem;
-    
-    button {
-      // @include button;
-      @include fade;
-      background: transparent;
-      color: colors.$dark-primary-text;
-      border: none;
-      // font-size: var.$default-font-size;
-      font-size: 1.5rem;
-
-      &:hover {
-        opacity: 100%;
-        color: colors.$red-accent;
-        background: transparent;
-      }
-      &:active {
-        background: transparent;
-      }
-    }
-  }
-
-  @media (max-width: 64em) {
-    .back-to-top-button {
-      bottom: 1.4rem;
-      
-      button {
-        font-size: 2rem;
-      }
-    }
-  }
-}
+@include theme('light', colors.$light-background, colors.$light-background-accent, colors.$light-highlight, colors.$light-primary-text, colors.$light-secondary-text);
+@include theme('dark', colors.$dark-background, colors.$dark-background-accent, colors.$dark-highlight, colors.$dark-primary-text, colors.$dark-secondary-text);

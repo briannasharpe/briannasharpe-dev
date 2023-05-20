@@ -1,7 +1,7 @@
-import { useState, useContext } from 'react';
+import { useContext } from 'react';
 import { BrowserRouter } from 'react-router-dom';
 
-// import { ThemeContext, ThemeProvider } from './context/ThemeContext'
+import { ThemeContext } from './context/ThemeContext'
 import NavBar from './components/NavBar';
 import Intro from './pages/Home/Intro';
 import About from './pages/Home/About';
@@ -12,29 +12,17 @@ import BackToTopButton from './components/BackToTopButton/BackToTopButton';
 import './App.scss';
 
 function App() {
-  const [dark, setDark] = useState(false);
-  const [theme, setTheme] = useState('light');
-  // const [theme, setTheme] = useContext(ThemeContext);
-
-// localStorage.setItem("theme", theme);
-// console.log(localStorage.getItem("theme"))
-
-// useEffect(() => {
-//   setTheme(localStorage.getItem("theme"));
-// }, []);
+  const { theme, setTheme } = useContext(ThemeContext);
+  // const [theme, setTheme] = useState('light');
 
   return(
     <>
       <BrowserRouter>
-      {/* <ThemeProvider> */}
         <div className={theme}>
             <NavBar 
-              currentTheme={dark} 
+              currentTheme={theme}
               changeTheme={() => {
-                setDark(!dark);
-                (dark === true) ? setTheme('light') : setTheme('dark');
-                // localStorage.setItem("theme", theme);
-                // console.log(localStorage.getItem("theme"))
+                setTheme(theme === 'light' ? 'dark' : 'light');
               }}
             />
             <Intro />
@@ -43,7 +31,6 @@ function App() {
             <Contact />
             <BackToTopButton currentTheme={theme} />
           </div>
-        {/* </ThemeProvider> */}
       </BrowserRouter>
     </>
   );
