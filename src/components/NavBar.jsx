@@ -47,6 +47,7 @@ function NavBar({ currentTheme, changeTheme }) {
         <div className="navbar-items">
           <div className="navbar-logo">
             <Link 
+              // smooth="true" 
               smooth to="/"
               onClick = {() => {
                 window.scrollTo({

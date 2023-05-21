@@ -24,14 +24,6 @@
 }
 
 /* -------------------------------- CONTAINER ------------------------------- */
-@mixin navbar-container {
-  height: var.$navbar-height;
-
-  @media (max-width: 64em) {
-    height: var.$mobile-navbar-height;
-  }
-}
-
 @mixin section-container {
   // width: 100%;
   max-width: 50rem;

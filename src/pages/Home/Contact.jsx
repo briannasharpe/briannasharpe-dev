@@ -1,11 +1,46 @@
+import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { useFormspark } from "@formspark/use-formspark";
 
 import InfoRow from '../../components/InfoRow/InfoRow';
 import DateTime from '../../components/DateTime/DateTime';
 
-import { introLinks, contactInfo } from '../../constants/sensitive';
+import { introLinks, contactInfo, FORMSPARK_FORM_ID, FORMSPARK_ACTION_URL } from '../../constants/sensitive';
 
 function Contact() {
+  // const [submit, submitting] = useFormspark({
+  //   formId: FORMSPARK_FORM_ID,
+  // });
+
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [subject, setSubject] = useState('');
+  const [message, setMessage] = useState('');
+
+  // const onSubmit = async (e) => {
+  //   e.preventDefault();
+  //   await submit({ name, email, subject, message });
+  //   alert("Form submitted");
+  // };
+
+  const onSubmit = async (e) => {
+    e.preventDefault();
+    await fetch(FORMSPARK_ACTION_URL, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify({
+        name,
+        email,
+        subject,
+        message,
+      }),
+    });
+    alert("Form submitted");
+  };
+
   return(
     <>
       <section id="contact" className="contact-container">
@@ -46,21 +81,32 @@ function Contact() {
 
           {/* ------------------------------ CONTACT FORM ------------------------------ */}
           <div className="form-container">
-            <form>
+            <form 
+              onSubmit={onSubmit}
+              // action={`https://submit-form.com/${FORMSPARK_FORM_ID}`}
+              action={FORMSPARK_ACTION_URL}
+              // method="post"
+            >
               {/* --------------------------- FORM LABELS (hide) --------------------------- */}
-                {/* <label htmlFor="name">name<span>*</span></label>
-                <label htmlFor="email">email address<span>*</span></label>
-                <label htmlFor="subject">subject</label>
-                <label htmlFor="message">message<span>*</span></label> */}
-                <input type="text" name="name" id="name" placeholder="Name*" required />
-                <input type="email" name="email" id="email" placeholder="Email address*" required />
-                <input type="text" name="subject" id="subject" placeholder="Subject" />
-                <textarea name="message" rows="6" id="message" placeholder="Message*" required />
-                <div className="form-submit">
-                  <button type="submit">Send Message <FontAwesomeIcon icon="fa-solid fa-paper-plane" /></button>
-                </div>
+              {/* <label htmlFor="name">name<span>*</span></label>
+              <label htmlFor="email">email address<span>*</span></label>
+              <label htmlFor="subject">subject</label>
+              <label htmlFor="message">message<span>*</span></label> */}
+              <input type="text" name="name" id="name" placeholder="Name*" required 
+                value={name} onChange={(e) => setName(e.target.value)} />
+              <input type="email" name="email" id="email" placeholder="Email address*" required 
+                value={email} onChange={(e) => setEmail(e.target.value)} />
+              <input type="text" name="subject" id="subject" placeholder="Subject" 
+                value={subject} onChange={(e) => setSubject(e.target.value)} />
+              <textarea name="message" id="message" rows="6" placeholder="Message*" required 
+                value={message} onChange={(e) => setMessage(e.target.value)} />
+              <div className="form-submit">
+                <button type="submit">Send Message <FontAwesomeIcon icon="fa-solid fa-paper-plane" /></button>
+                {/* <button type="submit" disabled={submitting}>Send Message <FontAwesomeIcon icon="fa-solid fa-paper-plane" /></button> */}
+              </div>
             </form>
           {/* <p>Send an <span>email</span> instead.</p> */}
+          {/* <span id="sent-msg">Sent</span> */}
           </div>
           {/* ------------------------------ CONTACT FORM ------------------------------ */}
         </div>

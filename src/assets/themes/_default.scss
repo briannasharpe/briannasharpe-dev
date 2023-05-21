@@ -24,21 +24,16 @@
     /*                                   NAVBAR                                   */
     /* -------------------------------------------------------------------------- */
     .navbar-container {
-      @include navbar-container;
+      height: var.$navbar-height;
       background-color: $background;
       border-bottom: 0.1rem solid $background-accent;
       @include drop-shadow($background-accent);
-      position: fixed;
-      // // position: sticky;
+      // position: fixed;
+      position: sticky;
+      top: 0;
       display: flex;
       width: 100%;
       z-index: 100;
-      // top: 0;
-      // // left: 0;
-      // // right: 0;
-      // align-items: center;
-      // // margin: 0;
-      // margin: 0 0;
 
       .navbar-items {
         display: flex;
@@ -316,6 +311,10 @@
         //   margin-top: 1rem;
         //   font-size: var.$subtext-font-size;
         // }
+
+        #sent-msg {
+          display: block;
+        }
       }
     
       .form-submit {
@@ -330,6 +329,7 @@
           cursor: pointer;
         }
       }
+
     }
     /* --------------------------------- CONTACT -------------------------------- */
 
@@ -339,6 +339,8 @@
       /*                               NAVBAR (MOBILE)                              */
       /* -------------------------------------------------------------------------- */
       .navbar-container {
+        height: var.$mobile-navbar-height;
+
         .navbar-links {
           display: none;
         }
