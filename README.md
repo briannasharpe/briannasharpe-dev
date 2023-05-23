@@ -1,5 +1,5 @@
 # Personal Website
-Created with **React** and **SASS**. View it here: [briannasharpe.dev](https://briannasharpe-dev.vercel.app/)
+Created with **React** and **SASS**. View it here: [briannasharpe.dev](https://briannasharpe.dev/)
 
 
 ## Changes
@@ -12,6 +12,7 @@ Major
  - [ ] project preview image
  - [ ] local intro image
  - [ ] icon
+ - [ ] form width
 
 Minor
  - [ ] shorten longer tech names
