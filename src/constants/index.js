@@ -40,6 +40,10 @@ export const technologies = [
     color: "#f7df1e",
   },
   {
+    id: "Python",
+    color: "#3777ab",
+  },
+  {
     id: "React",
     icon: "fa-brands fa-react",
     color: "#61dafb",
@@ -55,7 +59,6 @@ export const technologies = [
   },
   {
     id: "Figma",
-    color: "#",
   },
   {
     id: "AdobePhotoshop",
@@ -122,20 +125,7 @@ export const projectData = [
         id: "Sass",
       }
     ],
-    code: "https://github.com/briannasharpe/briannasharpe.github.io/tree/main",
+    code: "https://github.com/briannasharpe/briannasharpe.github.io/",
     demo: "/",
   },
-  // {
-  //   id: "project2",
-  //   image: "https://cdn.shopify.com/s/files/1/2420/2037/files/Kep1er_4th_Mini_Album_-_LOVESTRUCK_INFO_STRIP_NO_POSTER.png?v=1679585478",
-  //   name: "Todo List",
-  //   description: "A simple todo list web app that allows users to create and manage their daily tasks.",
-  //   technologies: [
-  //     {
-  //       id: "React",
-  //     },
-  //   ],
-  //   code: "https://github.com/",
-  //   demo: "https://github.com/",
-  // },
 ];

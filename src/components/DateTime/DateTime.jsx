@@ -2,7 +2,7 @@ import { useState } from 'react';
 import moment from 'moment';
 import 'moment-timezone';
 
-import { contactInfo } from '../../constants/sensitive';
+import { contactInfo } from '../../constants/misc';
 
 function DateTime() {
   let time = moment().tz(contactInfo[1].tz).format('MMMM Do YYYY, h:mm:ss a');

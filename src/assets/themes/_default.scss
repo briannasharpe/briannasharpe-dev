@@ -260,9 +260,11 @@
       
       .form-container {
         // max-width: var.$div-size;
+        flex-basis: 65%;
     
         form {
-          width: 95%;
+          // width: 95%;
+          width: 98%;
     
           input, textarea {
             z-index: 1;

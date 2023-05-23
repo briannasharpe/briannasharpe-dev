@@ -1,11 +1,11 @@
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { useFormspark } from "@formspark/use-formspark";
+// import { useFormspark } from "@formspark/use-formspark";
 
 import InfoRow from '../../components/InfoRow/InfoRow';
 import DateTime from '../../components/DateTime/DateTime';
 
-import { introLinks, contactInfo, FORMSPARK_FORM_ID, FORMSPARK_ACTION_URL } from '../../constants/sensitive';
+import { introLinks, contactInfo, FORMSPARK_FORM_ID, FORMSPARK_ACTION_URL } from '../../constants/misc';
 
 function Contact() {
   /* ----------------------------- formspark hook ----------------------------- */

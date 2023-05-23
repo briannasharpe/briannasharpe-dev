@@ -1,14 +1,14 @@
 # Personal Website
-A website to showcase one's skills, projects, and who they are as a professional. The site adaps to various devices and has a dark mode option to suit user preference.
+My website to showcase one's skills, projects, and who they are as a professional. The site adaps to various devices and has a dark mode option to suit user preference.
 
 ## Changes
-- removed `_light.scss` and `_dark.scss` from `base` folder
-- fixed navbar
-- added form functions (not properly working)
+- styling
+- revealed `constants\misc.js`
+- added python icon
 
 ## To-do:
 Major
- - [ ] contact form backend
+ - [x] contact form backend (not properly working)
  - [ ] hamburger menu animation/transition
 
 Minor

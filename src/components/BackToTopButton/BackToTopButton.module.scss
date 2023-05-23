@@ -17,6 +17,7 @@
         border: none;
         // font-size: var.$default-font-size;
         font-size: 1.5rem;
+        @include drop-shadow($background-accent);
   
         &:hover {
           opacity: 100%;

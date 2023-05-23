@@ -9,6 +9,7 @@ function AboutTechStack({ currentTheme }) {
     {id: "CSS"},
     {id: "Sass"},
     {id: "JavaScript"},
+    {id: "Python"},
   ];
 
   let frameworks_libraries = [

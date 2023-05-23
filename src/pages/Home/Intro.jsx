@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import { introLinks } from '../../constants/sensitive';
+import { introLinks } from '../../constants/misc';
 
 function Intro() {
   return(

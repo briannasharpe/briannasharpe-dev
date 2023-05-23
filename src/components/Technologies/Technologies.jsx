@@ -6,6 +6,7 @@ import AdobeIllustrator from '../Icons/AdobeIllustrator';
 import AdobePhotoshop from '../Icons/AdobePhotoshop';
 import AdobePremierePro from '../Icons/AdobePremierePro';
 import Figma from '../Icons/Figma';
+import Python from '../Icons/Python';
 import VisualStudioCode from '../Icons/VisualStudioCode';
 
 import { technologies } from '../../constants';
@@ -52,6 +53,8 @@ function Technologies({ techArray, size = '1.2rem' }) {
       return <AdobePremierePro />
     } else if (tech.id === 'Figma') {
       return <Figma />
+    } else if (tech.id === 'Python') {
+      return <Python />
     } else if (tech.id === 'VisualStudioCode') {
       return <VisualStudioCode />
     } else {
