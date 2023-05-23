@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { useFormspark } from "@formspark/use-formspark";
+import { useFormspark } from "@formspark/use-formspark";
 
 import InfoRow from '../../components/InfoRow/InfoRow';
 import DateTime from '../../components/DateTime/DateTime';
@@ -8,6 +8,7 @@ import DateTime from '../../components/DateTime/DateTime';
 import { introLinks, contactInfo, FORMSPARK_FORM_ID, FORMSPARK_ACTION_URL } from '../../constants/sensitive';
 
 function Contact() {
+  /* ----------------------------- formspark hook ----------------------------- */
   // const [submit, submitting] = useFormspark({
   //   formId: FORMSPARK_FORM_ID,
   // });
@@ -17,12 +18,14 @@ function Contact() {
   const [subject, setSubject] = useState('');
   const [message, setMessage] = useState('');
 
+
   // const onSubmit = async (e) => {
   //   e.preventDefault();
   //   await submit({ name, email, subject, message });
   //   alert("Form submitted");
   // };
 
+  /* ---------------------------------- fetch --------------------------------- */
   const onSubmit = async (e) => {
     e.preventDefault();
     await fetch(FORMSPARK_ACTION_URL, {
