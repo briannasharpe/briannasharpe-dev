@@ -1,31 +1,18 @@
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { useFormspark } from "@formspark/use-formspark";
 
 import InfoRow from '../../components/InfoRow/InfoRow';
 import DateTime from '../../components/DateTime/DateTime';
 
-import { introLinks, contactInfo, FORMSPARK_FORM_ID, FORMSPARK_ACTION_URL } from '../../constants/misc';
+import { introLinks, contactInfo, FORMSPARK_ACTION_URL } from '../../constants/misc';
 
 function Contact() {
-  /* ----------------------------- formspark hook ----------------------------- */
-  // const [submit, submitting] = useFormspark({
-  //   formId: FORMSPARK_FORM_ID,
-  // });
-
+  /* ----------------------------- FORM FUNCTIONS ----------------------------- */
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [subject, setSubject] = useState('');
   const [message, setMessage] = useState('');
 
-
-  // const onSubmit = async (e) => {
-  //   e.preventDefault();
-  //   await submit({ name, email, subject, message });
-  //   alert("Form submitted");
-  // };
-
-  /* ---------------------------------- fetch --------------------------------- */
   const onSubmit = async (e) => {
     e.preventDefault();
     await fetch(FORMSPARK_ACTION_URL, {
@@ -86,15 +73,8 @@ function Contact() {
           <div className="form-container">
             <form 
               onSubmit={onSubmit}
-              // action={`https://submit-form.com/${FORMSPARK_FORM_ID}`}
               action={FORMSPARK_ACTION_URL}
-              // method="post"
             >
-              {/* --------------------------- FORM LABELS (hide) --------------------------- */}
-              {/* <label htmlFor="name">name<span>*</span></label>
-              <label htmlFor="email">email address<span>*</span></label>
-              <label htmlFor="subject">subject</label>
-              <label htmlFor="message">message<span>*</span></label> */}
               <input type="text" name="name" id="name" placeholder="Name*" required 
                 value={name} onChange={(e) => setName(e.target.value)} />
               <input type="email" name="email" id="email" placeholder="Email address*" required 
@@ -105,11 +85,8 @@ function Contact() {
                 value={message} onChange={(e) => setMessage(e.target.value)} />
               <div className="form-submit">
                 <button type="submit">Send Message <FontAwesomeIcon icon="fa-solid fa-paper-plane" /></button>
-                {/* <button type="submit" disabled={submitting}>Send Message <FontAwesomeIcon icon="fa-solid fa-paper-plane" /></button> */}
               </div>
             </form>
-          {/* <p>Send an <span>email</span> instead.</p> */}
-          {/* <span id="sent-msg">Sent</span> */}
           </div>
           {/* ------------------------------ CONTACT FORM ------------------------------ */}
         </div>

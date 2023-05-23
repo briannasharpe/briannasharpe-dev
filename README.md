@@ -1,15 +1,19 @@
 # Personal Website
-My website to showcase one's skills, projects, and who they are as a professional. The site adaps to various devices and has a dark mode option to suit user preference.
+Created with **React** and **SASS**.
+
 
 ## Changes
-- styling
-- revealed `constants\misc.js`
-- added python icon
+- fixed form backend
+- adjusted vite config
 
 ## To-do:
 Major
- - [x] contact form backend (not properly working)
+ - [x] contact form backend
  - [ ] hamburger menu animation/transition
+ - [ ] resume download button
+ - [ ] project preview image
+ - [ ] local intro image
+ - [ ] icon
 
 Minor
  - [ ] shorten longer tech names

@@ -20,7 +20,7 @@ export const contactInfo = [
   // },
   {
     id: "email",
-    item: "email@gmail.com",
+    item: "brianna@briannasharpe.dev",
   },
   {
     id: "location",
@@ -32,3 +32,4 @@ export const contactInfo = [
 export const FORMSPARK_FORM_ID = "Dm2IOFkV";
 export const FORMSPARK_ACTION_URL = "https://submit-form.com/Dm2IOFkV";
 // export const FORMSPARK_ACTION_URL = "https://submit-form.com/echo";
+export const BOTPOISON_KEY = "pk_d0a89116-8823-42dc-af06-34f452cb3121";
