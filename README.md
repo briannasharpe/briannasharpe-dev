@@ -1,14 +1,12 @@
 # Personal Website
-Created with **React** and **SASS**.
+Created with **React** and **SASS**. View it here: [briannasharpe.dev](https://briannasharpe-dev.vercel.app/)
 
 
 ## Changes
-- fixed form backend
-- adjusted vite config
+
 
 ## To-do:
 Major
- - [x] contact form backend
  - [ ] hamburger menu animation/transition
  - [ ] resume download button
  - [ ] project preview image
