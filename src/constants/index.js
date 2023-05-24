@@ -79,7 +79,7 @@ export const technologies = [
   {
     id: "Github",
     icon: "fa-brands fa-github",
-    color: "#000000",
+    // color: "#000000",
   },
   {
     id: "Windows",
@@ -89,7 +89,7 @@ export const technologies = [
   {
     id: "Linux",
     icon: "fa-brands fa-linux",
-    color: "#000000",
+    // color: "#000000",
   },
   {
     id: "Ubuntu/Linux",
@@ -125,7 +125,7 @@ export const projectData = [
         id: "Sass",
       }
     ],
-    code: "https://github.com/briannasharpe/briannasharpe.github.io/",
-    demo: "/",
+    code: "https://github.com/briannasharpe/briannasharpe-dev",
+    demo: "https://briannasharpe.dev/",
   },
 ];

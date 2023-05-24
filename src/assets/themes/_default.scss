@@ -18,7 +18,6 @@
   .#{$name} {
     color: $primary-text;
     background-color: $background;
-    // padding: 0 2rem;
 
     /* -------------------------------------------------------------------------- */
     /*                                   NAVBAR                                   */
@@ -112,8 +111,7 @@
     .intro-container {
       @include section-container;
       min-height: var.$section-height;
-      // padding-top: 0;
-      // background-color: $background;
+      padding-top: 0;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -123,8 +121,6 @@
       }
       
       .intro-text {
-        // max-width: var.$div-size;
-      
         h1 {
           font-size: 4rem;
         }
@@ -139,7 +135,6 @@
       }
       
       .intro-pic {
-        // max-width: var.$div-size;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -147,7 +142,10 @@
         img {
           border-radius: 50%;
         }
-          
+      }
+
+      #greeting {
+        font-size: 2.5rem;
       }
     }
     /* ---------------------------------- INTRO --------------------------------- */
@@ -158,36 +156,14 @@
     /* -------------------------------------------------------------------------- */
     .about-container {
       @include section-container;
-      // background-color: $background;
-      // display: flex;
-      // justify-content: center;
-      // align-items: center;
-      // text-align: center;
       align-items: flex-start;
       
       .about-header {
         @include container-header;
-
-        h1 {
-          // padding: 0 0 0.5rem 0;
-        }
       }
 
       .about-content {
         @include gap;
-        // align-items: flex-start;
-
-        // .about-pic {
-        //   background-color: green;
-          // max-width: var.$div-size;
-        //   display: flex;
-        //   justify-content: center;
-        //   align-items: center;
-        // }
-        
-        // .about-text {
-          // max-width: var.$div-size;
-        // }
     
         .about-links {
           padding: 1rem 0;
@@ -203,11 +179,6 @@
     /* -------------------------------------------------------------------------- */
     .projects-container {
       @include section-container;
-      // background-color: $background;
-      // display: flex;
-      // flex-direction: column;
-      // justify-content: center;
-      // align-items: center;
       
       .projects-header {
         @include container-header;
@@ -227,15 +198,10 @@
     /* -------------------------------------------------------------------------- */
     .contact-container {
       @include section-container;
-      // background-color: $background;
-      // display: flex;
-      // flex-direction: column;
-      // align-items: center;
       padding-bottom: var.$navbar-height;
 
       .contact-header {
         @include container-header;
-        text-align: center;
       }
 
       .contact-content {
@@ -259,19 +225,15 @@
       }
       
       .form-container {
-        // max-width: var.$div-size;
         flex-basis: 65%;
     
         form {
-          // width: 95%;
-          width: 98%;
+          width: 100%;
     
           input, textarea {
             z-index: 1;
-            // position: relative;
             border: 0;
             width: 100%;
-            // background: transparent;
             background-color: colors.$white;
             @include drop-shadow($background-accent);
             padding: 0.5rem;
@@ -290,29 +252,11 @@
             border-radius: var.$rounded;
             resize: none;
           }
-          
-          // label {
-          //   z-index: 2;
-          //   // position: absolute;
-          //   text-transform: capitalize;
-          //   margin-left: 1rem;
-          //   font-size: var.$default-font-size;
-    
-          //   span {
-          //     color: colors.$red-accent;
-          //     font-weight: 700;
-          //   }
-          // }
         } /* form */
         
         #name, #email, #subject, #message {
           padding-left: 1rem;
         }
-    
-        // p {
-        //   margin-top: 1rem;
-        //   font-size: var.$subtext-font-size;
-        // }
 
         #sent-msg {
           display: block;
@@ -322,6 +266,7 @@
       .form-submit {
         display: flex;
         justify-content: center;
+        margin-left: 1.5rem;
         
         button {
           @include button;
@@ -414,7 +359,6 @@
 
         .intro-content {
           flex-direction: column-reverse;
-          padding: 0 2rem;
         }
       }
       /* ----------------------------- INTRO (MOBILE) ----------------------------- */
@@ -426,7 +370,6 @@
       .about-container {
         .about-content {
           flex-direction: column;
-          padding: 0 2rem;
         }
       }
       /* ----------------------------- ABOUT (MOBILE) ----------------------------- */
@@ -442,14 +385,18 @@
       /*                              CONTACT (MOBILE)                              */
       /* -------------------------------------------------------------------------- */
       .contact-container {
-        padding-bottom: 1rem;
+        padding-bottom: var.$mobile-navbar-height;
+
         .contact-content {
           flex-direction: column;
-          padding: 0 2rem 2rem 2rem;
         }
 
         .form-container {
           margin-right: 0.5rem;
+
+          form {
+            width: 92%;
+          }
         }
       }
       /* ---------------------------- CONTACT (MOBILE) ---------------------------- */

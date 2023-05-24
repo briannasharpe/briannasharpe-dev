@@ -4,13 +4,9 @@
 
 @mixin theme($name, $background, $background-accent, $highlight, $primary-text, $secondary-text) {
   .#{$name} {
-    // padding: 0 2rem;
-  
     .project-container {
-      // max-width: calc(var.$div-size * 2);
-      // max-width: inherit;
-      // width: 100%;
-      max-height: calc(var.$div-size * 0.7);
+      // max-height: calc(var.$div-size * 0.7);
+      max-height: 20rem;
       display: flex;
       gap: 1rem;
       padding: 1rem;

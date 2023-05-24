@@ -7,7 +7,7 @@ function Projects({ currentTheme }) {
     <>
       <section id="projects" className="projects-container">
         <div className="projects-header">
-          <h1>Projects</h1>
+          <h1>Recent Works</h1>
         </div>
         <div className="projects-content">
           {projectData.map((project) => (

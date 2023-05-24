@@ -31,15 +31,10 @@ function About({ currentTheme }) {
           <h1>About Me</h1>
         </div>
         <div className="about-content">
-          {/* <div className="about-pic">
-            img
-          </div> */}
-          {/* <div className="about-text"> */}
-            <Tabs 
-              contentArray={tabArray} 
-              currentTheme={currentTheme}
-              />
-          {/* </div> */}
+          <Tabs 
+            contentArray={tabArray} 
+            currentTheme={currentTheme}
+          />
         </div>
       </section>
     </>

@@ -59,13 +59,12 @@ function Contact() {
             </div>
             <h2>Socials</h2>
             <div className="contact-socials">
-              <a href={introLinks[0].link} title={introLinks[0].id} target="_blank" rel="noreferrer">
-                  <FontAwesomeIcon icon="fa-brands fa-github" />
-                  
-                </a>
-                <a href={introLinks[1].link} title={introLinks[1].id} target="_blank" rel="noreferrer">
-                  <FontAwesomeIcon icon="fa-brands fa-linkedin" />
-                </a>
+              <a href={introLinks[1].link} title={introLinks[0].id} target="_blank" rel="noreferrer">
+                <FontAwesomeIcon icon="fa-brands fa-github" />
+              </a>
+              <a href={introLinks[2].link} title={introLinks[1].id} target="_blank" rel="noreferrer">
+                <FontAwesomeIcon icon="fa-brands fa-linkedin" />
+              </a>
             </div>
           </div>
 

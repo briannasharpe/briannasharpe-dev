@@ -13,7 +13,6 @@ import './App.scss';
 
 function App() {
   const { theme, setTheme } = useContext(ThemeContext);
-  // const [theme, setTheme] = useState('light');
 
   return(
     <>
