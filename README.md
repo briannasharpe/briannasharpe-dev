@@ -3,20 +3,14 @@ Created with **React** and **SASS**. View it here: [briannasharpe.dev](https://b
 
 
 ## Changes
-- formatting, styling
-- removed unused comments
-- updated resume link
-- added favicon
+
 
 ## To-do:
 Major
  - [ ] hamburger menu animation/transition
  - [ ] resume download button
  - [ ] project preview image
- - [ ] ~~local intro image~~ not really needed
- - [x] icon
- - [x] form width
- - [x] dark background accent
+ - [ x] light background accent
 
 Minor
  - [ ] shorten longer tech names
