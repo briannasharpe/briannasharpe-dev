@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import InfoRow from '../../components/InfoRow/InfoRow';
 import DateTime from '../../components/DateTime/DateTime';
@@ -60,10 +60,12 @@ function Contact() {
             <h2>Socials</h2>
             <div className="contact-socials">
               <a href={introLinks[1].link} title={introLinks[0].id} target="_blank" rel="noreferrer">
-                <FontAwesomeIcon icon="fa-brands fa-github" />
+                {/* <FontAwesomeIcon icon="fa-brands fa-github" /> */}
+                <i className="fa-brands fa-github"></i>
               </a>
               <a href={introLinks[2].link} title={introLinks[1].id} target="_blank" rel="noreferrer">
-                <FontAwesomeIcon icon="fa-brands fa-linkedin" />
+                {/* <FontAwesomeIcon icon="fa-brands fa-linkedin" /> */}
+                <i className="fa-brands fa-linkedin"></i>
               </a>
             </div>
           </div>
@@ -83,7 +85,8 @@ function Contact() {
               <textarea name="message" id="message" rows="6" placeholder="Message*" required 
                 value={message} onChange={(e) => setMessage(e.target.value)} />
               <div className="form-submit">
-                <button type="submit">Send Message <FontAwesomeIcon icon="fa-solid fa-paper-plane" /></button>
+                {/* <button type="submit">Send Message <FontAwesomeIcon icon="fa-solid fa-paper-plane" /></button> */}
+                <button type="submit">Send Message <i className="fa-solid fa-paper-plane"></i></button>
               </div>
             </form>
           </div>

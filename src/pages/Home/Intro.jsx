@@ -1,4 +1,4 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { introLinks } from '../../constants/misc';
 
@@ -13,10 +13,12 @@ function Intro() {
             <p>I am a Front End Developer based in Los Angeles, California.</p>
             <div className="intro-links">
               <a href={introLinks[1].link} title={introLinks[0].id} target="_blank" rel="noreferrer">
-                <FontAwesomeIcon icon="fa-brands fa-github" />
+                {/* <FontAwesomeIcon icon="fa-brands fa-github" /> */}
+                <i className="fa-brands fa-github"></i>
               </a>
               <a href={introLinks[2].link} title={introLinks[1].id} target="_blank" rel="noreferrer">
-                <FontAwesomeIcon icon="fa-brands fa-linkedin" />
+                {/* <FontAwesomeIcon icon="fa-brands fa-linkedin" /> */}
+                <i className="fa-brands fa-linkedin"></i>
               </a>
             </div>
           </div>

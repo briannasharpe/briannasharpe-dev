@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { NavHashLink } from 'react-router-hash-link';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import ThemeToggleButton from '../components/ThemeToggleButton/ThemeToggleButton';
 
@@ -15,11 +15,13 @@ function NavBar({ currentTheme, changeTheme }) {
   if (showMenu) {
     menu = 
       <div className="mobile-nav-links">
-        <div className="close-nav">
-          <FontAwesomeIcon 
+        {/* <div className="close-nav"> */}
+        <div className="close-nav" onClick={() => setShowMenu(!showMenu)}>
+          {/* <FontAwesomeIcon 
             icon="fa-solid fa-xmark" 
             onClick={() => setShowMenu(!showMenu)}
-            />
+            /> */}
+            <i className="fa-solid fa-xmark"></i>
         </div>
         <ul>
           {navLinks.map((link) => (
@@ -61,12 +63,15 @@ function NavBar({ currentTheme, changeTheme }) {
           </div>
           
           {/* ---------------------------- MOBILE NAV BUTTON --------------------------- */}
-          <div className="mobile-nav-toggle">
+          {/* <div className="mobile-nav-toggle"> */}
+          <div className="mobile-nav-toggle" onClick={() => setShowMenu(!showMenu)}>
             <span className="sr-only">Menu</span>
-            <FontAwesomeIcon 
+            {/* <FontAwesomeIcon 
               icon="fa-solid fa-bars" 
               onClick={() => setShowMenu(!showMenu)}
-            />
+            /> */}
+            {/* <i className="fa-solid fa-bars" onClick={() => setShowMenu(!showMenu)}></i> */}
+            <i className="fa-solid fa-bars"></i>
           </div>
           {/* ---------------------------- MOBILE NAV BUTTON --------------------------- */}
 

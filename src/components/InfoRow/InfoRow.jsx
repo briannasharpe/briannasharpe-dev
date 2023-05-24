@@ -1,4 +1,4 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import classes from './InfoRow.module.scss';
 
@@ -7,7 +7,8 @@ function InfoRow({ icon, title, content }) {
     <>
       <div className={classes['info-row-container']}>
         <div className={classes['info-icon']}>
-          <FontAwesomeIcon icon={icon} />
+          {/* <FontAwesomeIcon icon={icon} /> */}
+          <i className={icon}></i>
         </div>
         <div className={classes['info-content']}>
           <h3>{title}</h3>

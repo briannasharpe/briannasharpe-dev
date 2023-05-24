@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import classes from './Tabs.module.scss';
 
@@ -22,7 +22,8 @@ function Tabs({ contentArray, currentTheme }) {
               onClick={() => updateToggle(tab.id)}
             >
               <span>{tab.title}</span>
-              <FontAwesomeIcon icon={tab.icon} />
+              {/* <FontAwesomeIcon icon={tab.icon} /> */}
+              <i className={tab.icon}></i>
             </li>
           ))}
         </ul>
