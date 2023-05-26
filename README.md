@@ -3,7 +3,7 @@ Created with **React** and **SASS**. View it here: [briannasharpe.dev](https://b
 
 
 ## Changes
-
+- changed `ThemeToggleButton.jsx` and `Technologies.jsx` to use fa icons
 
 ## To-do:
 Major

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import AdobeAfterEffects from '../Icons/AdobeAfterEffects';
 import AdobeIllustrator from '../Icons/AdobeIllustrator';
@@ -58,8 +58,8 @@ function Technologies({ techArray, size = '1.2rem' }) {
     } else if (tech.id === 'VisualStudioCode') {
       return <VisualStudioCode />
     } else {
-      // return <FontAwesomeIcon icon={tech.icon} />
-      return <i className={tech.icon}></i>
+      return <FontAwesomeIcon icon={tech.icon} />
+      // return <i className={tech.icon}></i>
     }
   }
   /* -------------------------------------------------------------------------- */
