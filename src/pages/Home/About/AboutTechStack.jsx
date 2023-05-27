@@ -17,12 +17,17 @@ function AboutTechStack({ currentTheme }) {
   ];
 
   let tooling_software = [
-    {id: "VisualStudioCode"},
+    // {id: "VisualStudioCode"},
+    {id: "VSCode"},
     {id: "Git"},
-    {id: "AdobePhotoshop"},
-    {id: "AdobeIllustrator"},
-    {id: "AdobePremierePro"},
-    {id: "AdobeAfterEffects"},
+    // {id: "AdobePhotoshop"},
+    // {id: "AdobeIllustrator"},
+    // {id: "AdobePremierePro"},
+    // {id: "AdobeAfterEffects"},
+    {id: "Photoshop"},
+    {id: "Illustrator"},
+    {id: "PremierePro"},
+    {id: "AfterEffects"},
     {id: "Figma"},
   ];
 
@@ -62,13 +67,13 @@ function AboutTechStack({ currentTheme }) {
           currentTheme={currentTheme}
         />
       </div>
-      <div>
+      {/* <div>
         <Squares 
           heading='Services'
           content={<Technologies techArray={services} size='2rem' />}
           currentTheme={currentTheme}
         />
-      </div>
+      </div> */}
       <div>
         <Squares 
           heading='Platforms'

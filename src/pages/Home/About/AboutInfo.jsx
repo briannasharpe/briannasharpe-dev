@@ -11,7 +11,7 @@ function AboutInfo() {
           link="https://github.com/briannasharpe/briannasharpe-dev/tree/main/public/files/Empty_PDF.pdf"
           text="Resume"
           title="resume download link"
-          icon="fa-solid fa-download"
+          icon="download"
         />
       </div>
     </>

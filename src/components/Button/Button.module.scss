@@ -4,4 +4,8 @@
 
 .button a {
   @include button;
+
+  svg {
+    font-size: var.$default-font-size;
+  }
 }

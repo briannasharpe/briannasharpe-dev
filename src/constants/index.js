@@ -21,22 +21,22 @@ export const technologies = [
   // },
   {
     id: "HTML",
-    icon: "fa-brands fa-html5",
+    // icon: "fa-brands fa-html5",
     color: "#e44d26",
   },
   {
     id: "CSS",
-    icon: "fa-brands fa-css3-alt",
+    // icon: "fa-brands fa-css3-alt",
     color: "#264de4",
   },
   {
     id: "Sass",
-    icon: "fa-brands fa-sass",
+    // icon: "fa-brands fa-sass",
     color: "#cd6799",
   },
   {
     id: "JavaScript",
-    icon: "fa-brands fa-square-js",
+    // icon: "fa-brands fa-square-js",
     color: "#f7df1e",
   },
   {
@@ -45,55 +45,61 @@ export const technologies = [
   },
   {
     id: "React",
-    icon: "fa-brands fa-react",
+    // icon: "fa-brands fa-react",
     color: "#61dafb",
   },
   {
-    id: "VisualStudioCode",
+    // id: "VisualStudioCode",
+    id: "VSCode",
     color: "#46adf3",
   },
   {
     id: "Git",
-    icon: "fa-brands fa-git-alt",
+    // icon: "fa-brands fa-git-alt",
     color: "#f05033",
   },
   {
     id: "Figma",
   },
   {
-    id: "AdobePhotoshop",
+    // id: "AdobePhotoshop",
+    id: "Photoshop",
     color: "#31a8ff",
   },
   {
-    id: "AdobeIllustrator",
+    // id: "AdobeIllustrator",
+    // id: "AdobeIllustrator",
+    id: "Illustrator",
     color: "#ff9a00",
   },
   {
-    id: "AdobePremierePro",
+    // id: "AdobePremierePro",
+    id: "PremierePro",
     color: "#9999ff",
   },
   {
-    id: "AdobeAfterEffects",
+    // id: "AdobeAfterEffects",
+    id: "AfterEffects",
     color: "#9999ff",
   },
   {
     id: "Github",
-    icon: "fa-brands fa-github",
+    // icon: "fa-brands fa-github",
     // color: "#000000",
   },
   {
     id: "Windows",
-    icon: "fa-brands fa-windows",
+    // icon: "fa-brands fa-windows",
     color: "#00aeee",
   },
   {
     id: "Linux",
-    icon: "fa-brands fa-linux",
+    // icon: "fa-brands fa-linux",
     // color: "#000000",
   },
   {
     id: "Ubuntu/Linux",
-    icon: "fa-brands fa-ubuntu",
+    // icon: "fa-brands fa-ubuntu",
     color: "#e65320",
   },
 ];

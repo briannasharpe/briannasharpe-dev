@@ -7,7 +7,10 @@
     display: inline-flex;
     flex-wrap: wrap;
     gap: 1rem;
-    // justify-content: center;
+
+    li {
+      // display: inline-flex;
+    }
   }
   
   span {
@@ -15,8 +18,6 @@
     position: relative;
     bottom: 10%;
     font-weight: 600;
-    // word-wrap: break-word;
-    // overflow-wrap: break-word;
     overflow-wrap: anywhere;
   }
 }

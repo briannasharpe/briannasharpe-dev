@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import FontAwesomeIcons from '../Icons/FontAwesomeIcons';
 
 import classes from './BackToTopButton.module.scss';
 
@@ -29,8 +29,8 @@ function BackToTopButton({ currentTheme }) {
         <div className={classes['back-to-top-button']}>
           {backToTopButton && (
             <button onClick={scrollUp}>
-              {/* <FontAwesomeIcon icon="fa-solid fa-circle-arrow-up" /> */}
-              <i className="fa-solid fa-circle-arrow-up"></i>
+              <span className="sr-only">Back to top</span>
+              <FontAwesomeIcons icon="circle-arrow-up" />
             </button>
           )}
         </div>

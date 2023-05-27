@@ -25,7 +25,7 @@
     .navbar-container {
       height: var.$navbar-height;
       background-color: $background;
-      border-bottom: 0.1rem solid $background-accent;
+      // border-bottom: 0.05rem solid $background-accent;
       @include drop-shadow($background-accent);
       // position: fixed;
       position: sticky;

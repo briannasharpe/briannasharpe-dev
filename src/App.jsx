@@ -12,24 +12,24 @@ import BackToTopButton from './components/BackToTopButton/BackToTopButton';
 import './App.scss';
 
 function App() {
-  const { theme, setTheme } = useContext(ThemeContext);
+  const { theme, setTheme } = useContext(ThemeContext)
 
   return(
     <>
       <BrowserRouter>
         <div className={theme}>
-            <NavBar 
-              currentTheme={theme}
-              changeTheme={() => {
-                setTheme(theme === 'light' ? 'dark' : 'light');
-              }}
-            />
-            <Intro />
-            <About currentTheme={theme} />
-            <Projects currentTheme={theme} />
-            <Contact />
-            <BackToTopButton currentTheme={theme} />
-          </div>
+          <NavBar 
+            currentTheme={theme}
+            changeTheme={() => {
+              setTheme(theme === 'light' ? 'dark' : 'light');
+            }}
+          />
+          <Intro />
+          <About currentTheme={theme} />
+          <Projects currentTheme={theme} />
+          <Contact />
+          <BackToTopButton currentTheme={theme} />
+        </div>
       </BrowserRouter>
     </>
   );

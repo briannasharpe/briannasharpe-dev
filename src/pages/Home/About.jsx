@@ -13,13 +13,13 @@ function About({ currentTheme }) {
     {
       id: 1,
       title: "About",
-      icon: "fa-solid fa-user-pen",
+      icon: "user-pen",
       content: <AboutInfo />,
     },
     {
       id: 2,
       title: "Tech",
-      icon: "fa-solid fa-code",
+      icon: "code",
       content: <AboutTechStack currentTheme={currentTheme} />,
     },
   ]

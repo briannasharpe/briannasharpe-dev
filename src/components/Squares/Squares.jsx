@@ -1,5 +1,3 @@
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
 import classes from './Squares.module.scss';
 
 function Squares({ heading, content, currentTheme }) {

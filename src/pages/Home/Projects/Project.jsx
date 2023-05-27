@@ -27,13 +27,13 @@ function Project({ img, name, description, tech, code, demo, currentTheme }) {
                 link={code}
                 text="Code"
                 title="code link"
-                icon="fa-brands fa-github"
+                icon="github"
               />
               <Button 
                 link={demo}
                 text="Demo"
                 title="demo link"
-                icon="fa-solid fa-arrow-up-right-from-square"
+                icon="arrow-up-right-from-square"
               />
             </div>
           </div>

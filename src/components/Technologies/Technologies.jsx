@@ -1,18 +1,11 @@
 import { useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import AdobeAfterEffects from '../Icons/AdobeAfterEffects';
-import AdobeIllustrator from '../Icons/AdobeIllustrator';
-import AdobePhotoshop from '../Icons/AdobePhotoshop';
-import AdobePremierePro from '../Icons/AdobePremierePro';
-import Figma from '../Icons/Figma';
-import Python from '../Icons/Python';
-import VisualStudioCode from '../Icons/VisualStudioCode';
+import FontAwesomeIcons from '../Icons/FontAwesomeIcons';
+import WebIcons from '../Icons/WebIcons';
 
 import { technologies } from '../../constants';
 
 import classes from './Technologies.module.scss';
-
 
 function Technologies({ techArray, size = '1.2rem' }) {
   /* --------------------------- SHOW NAMES ON HOVER -------------------------- */
@@ -39,27 +32,33 @@ function Technologies({ techArray, size = '1.2rem' }) {
   /* -------------------------------------------------------------------------- */
 
 
-  /* -------------------------------------------------------------------------- */
-  /*                             GET FA/NON-FA ICON                             */
-  /* -------------------------------------------------------------------------- */
+  /* --------------------------- GET FA/NON-FA ICON --------------------------- */
   const getIconType = (tech) => {
-    if (tech.id === 'AdobeAfterEffects') {
-      return <AdobeAfterEffects />
-    } else if (tech.id === 'AdobeIllustrator') {
-      return <AdobeIllustrator />
-    } else if (tech.id === 'AdobePhotoshop') {
-      return <AdobePhotoshop />
-    } else if (tech.id === 'AdobePremierePro') {
-      return <AdobePremierePro />
-    } else if (tech.id === 'Figma') {
-      return <Figma />
-    } else if (tech.id === 'Python') {
-      return <Python />
-    } else if (tech.id === 'VisualStudioCode') {
-      return <VisualStudioCode />
-    } else {
-      return <FontAwesomeIcon icon={tech.icon} />
-      // return <i className={tech.icon}></i>
+    switch(tech.id) {
+      case 'HTML':
+      case 'CSS':
+      case 'Sass':
+      case 'JavaScript':
+      case 'React':
+      case 'Git':
+      case 'Github':
+      case 'Windows':
+      case 'Linux':
+      case 'Ubuntu/Linux':
+        return <FontAwesomeIcons icon={tech.id} />
+      // case 'AdobeAfterEffects':
+      // case 'AdobeIllustrator':
+      // case 'AdobePhotoshop':
+      // case 'AdobePremierePro':
+      case 'AfterEffects':
+      case 'Illustrator':
+      case 'Photoshop':
+      case 'PremierePro':
+      case 'Figma':
+      case 'Python':
+      case 'VSCode':
+      // case 'VisualStudioCode':
+        return <WebIcons icon={tech.id} />
     }
   }
   /* -------------------------------------------------------------------------- */

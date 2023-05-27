@@ -23,6 +23,12 @@
         // font-size: 1rem;
       }
     }
+
+    @media (max-width: 64em) {
+      .squares-container {
+        width: 9rem;
+      }
+    }
   }
 }
 

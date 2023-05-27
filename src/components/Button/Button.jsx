@@ -1,4 +1,4 @@
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import FontAwesomeIcons from '../Icons/FontAwesomeIcons';
 
 import classes from './Button.module.scss';
 
@@ -8,8 +8,7 @@ function Button({ link, text, title, icon }) {
       <div className={classes.button}>
         <a href={link} title={title} target="_blank" rel="noreferrer">
           {text}
-          {/* <FontAwesomeIcon icon={icon} /> */}
-          <i className={icon}></i>
+          <FontAwesomeIcons icon={icon} />
         </a>
       </div>
     </>
