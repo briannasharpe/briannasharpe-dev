@@ -23,18 +23,20 @@ function Project({ img, name, description, tech, code, demo, currentTheme }) {
             </div>
 
             <div className={classes['project-button-container']}>
-              <Button 
-                link={code}
-                text="Code"
-                title="code link"
-                icon="github"
-              />
+                <Button 
+                  link={code}
+                  text="Code"
+                  title="code link"
+                  icon="github"
+                />
+              <span id={classes['button-icon']}>
               <Button 
                 link={demo}
                 text="Demo"
                 title="demo link"
                 icon="arrow-up-right-from-square"
-              />
+                />
+                </span>
             </div>
           </div>
         </div>

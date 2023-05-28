@@ -5,7 +5,6 @@
 @mixin theme($name, $background, $background-accent, $highlight, $primary-text, $secondary-text) {
   .#{$name} {
     .project-container {
-      // max-height: calc(var.$div-size * 0.7);
       max-height: 20rem;
       display: flex;
       gap: 1rem;
@@ -20,6 +19,8 @@
         flex-basis: 50%;
         overflow: hidden;
         border-radius: var.$rounded;
+        max-height: 17rem;
+        @include drop-shadow($background-accent);
       
         img {
           width: 100%;
@@ -49,7 +50,6 @@
 
       .project-tech-container {
         padding-top: 1rem;
-        // height: 2rem;
       }
       
       .project-button-container {
@@ -57,6 +57,12 @@
         justify-content: center;
         gap: 1rem;
         padding: 1rem 0;
+      }
+
+      #button-icon {
+        svg {
+          font-size: 1.1rem;
+        }
       }
     }
 
@@ -66,7 +72,6 @@
         max-height: 100%;
 
         .project-image {
-          max-height: 50vh;
           overflow: scroll;
           overflow-x: hidden;
         }

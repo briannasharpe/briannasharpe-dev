@@ -3,32 +3,22 @@ Created with **React** and **SASS**. View it here: [briannasharpe.dev](https://b
 
 
 ## Changes
-- made every fa icon an individual import in `FontAwesomeIcons.jsx`
-- made every web icon to be imported from `WebIcons.jsx`
-- removed old icons (imports and comments)
-- removed `src\index.scss`
 - styling
+- added project preview image
 
 
 ## To-do:
 Major
- - [ ] hamburger menu animation/transition
- - [ ] project preview image
- - [ ] upload resume pdf
+ - [x] project preview image
+ - [x] upload resume pdf
 
 Minor
- - [x] shorten longer tech names
- - [ ] ~~force refresh (icons don't show up sometimes)~~ imported individual fa icons to see if that fixes it, if not, gg
+ - [ ] hamburger menu animation/transition
  - [ ] tabs for projects
 
 Ideas
- - [ ] see more → school projects*
- - [ ] project sorting*
- - [ ] pagewide padding (remove section padding, +look at project module)
- - [ ] project description split to new line on ///
+ - [x] pagewide padding (remove section padding, +look at project module) (completed how many commits ago)
+ - [ ] ~~project description split to new line on ///~~ not necessary
  - [ ] address bar change on section scroll
  - [ ] navbar active class
  - [ ] link title styling
-
-## Temp Files
-- `src\index.scss` (removed)

@@ -120,7 +120,8 @@ export const projectData = [
   // },
   {
     id: "project1",
-    image: "https://cdn.shopify.com/s/files/1/2420/2037/files/Kep1er_4th_Mini_Album_-_LOVESTRUCK_INFO_STRIP_NO_POSTER.png?v=1679585478",
+    // image: "https://cdn.shopify.com/s/files/1/2420/2037/files/Kep1er_4th_Mini_Album_-_LOVESTRUCK_INFO_STRIP_NO_POSTER.png?v=1679585478",
+    image: "/projects/personal_website_long.webp",
     name: "Personal Website",
     description: "A website to showcase one's skills, projects, and who they are as a professional. The site adaps to various devices and has a dark mode option to suit user preference.",
     technologies: [
@@ -134,4 +135,20 @@ export const projectData = [
     code: "https://github.com/briannasharpe/briannasharpe-dev",
     demo: "https://briannasharpe.dev/",
   },
+  // {
+  //   id: "project2",
+  //   image: "https://cdn.shopify.com/s/files/1/2420/2037/files/Kep1er_4th_Mini_Album_-_LOVESTRUCK_INFO_STRIP_NO_POSTER.png?v=1679585478",
+  //   name: "",
+  //   description: "",
+  //   technologies: [
+  //     {
+  //       id: "React",
+  //     },
+  //     {
+  //       id: "Sass",
+  //     }
+  //   ],
+  //   code: "",
+  //   demo: "",
+  // },
 ];
