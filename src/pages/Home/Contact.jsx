@@ -1,10 +1,16 @@
 import { useState } from 'react';
+import axios from "axios";
+import Botpoison from "@botpoison/browser";
 
 import FontAwesomeIcons from '../../components/Icons/FontAwesomeIcons';
 import InfoRow from '../../components/InfoRow/InfoRow';
 import DateTime from '../../components/DateTime/DateTime';
 
-import { introLinks, contactInfo, FORMSPARK_ACTION_URL } from '../../constants/misc';
+import { introLinks, contactInfo, FORMSPARK_ACTION_URL, BOTPOISON_PUBLIC_KEY } from '../../constants/misc';
+
+const botpoison = new Botpoison({
+  publicKey: BOTPOISON_PUBLIC_KEY,
+});
 
 function Contact() {
   /* ----------------------------- FORM FUNCTIONS ----------------------------- */
@@ -15,18 +21,13 @@ function Contact() {
 
   const onSubmit = async (e) => {
     e.preventDefault();
-    await fetch(FORMSPARK_ACTION_URL, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-      body: JSON.stringify({
-        name,
-        email,
-        subject,
-        message,
-      }),
+    const { solution } = await botpoison.challenge();
+    await axios.post(FORMSPARK_ACTION_URL, {
+      name,
+      email,
+      subject,
+      message,
+      _botpoison: solution,
     });
     alert("Form submitted");
   };
@@ -72,7 +73,7 @@ function Contact() {
           <div className="form-container">
             <form 
               onSubmit={onSubmit}
-              action={FORMSPARK_ACTION_URL}
+              target="_blank"
             >
               <input type="text" name="name" id="name" placeholder="Name*" required 
                 value={name} onChange={(e) => setName(e.target.value)} />

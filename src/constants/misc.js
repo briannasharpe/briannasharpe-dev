@@ -34,3 +34,4 @@ export const contactInfo = [
 ];
 
 export const FORMSPARK_ACTION_URL = "https://submit-form.com/Dm2IOFkV";
+export const BOTPOISON_PUBLIC_KEY = "pk_d0a89116-8823-42dc-af06-34f452cb3121";
