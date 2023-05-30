@@ -3,11 +3,6 @@ Created with **React** and **SASS**. View it here: [briannasharpe.dev](https://b
 
 
 ## Changes
-- added tabs to `Projects.jsx`
-- added school projects and necessary temp(?) icons
-- replaced icon web links with local files
-- removed unused comments
-- styling
 
 
 ## To-do:
@@ -16,7 +11,6 @@ Major
 
 Minor
  - [ ] hamburger menu animation/transition
- - [x] tabs for projects
  - [ ] custom scrollbars
 
 Ideas
