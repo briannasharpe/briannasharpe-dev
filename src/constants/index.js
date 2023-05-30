@@ -16,27 +16,22 @@ export const navLinks = [
 export const technologies = [
   // {
   //   id: "",
-  //   icon: "",
   //   color: "#",
   // },
   {
     id: "HTML",
-    // icon: "fa-brands fa-html5",
     color: "#e44d26",
   },
   {
     id: "CSS",
-    // icon: "fa-brands fa-css3-alt",
     color: "#264de4",
   },
   {
     id: "Sass",
-    // icon: "fa-brands fa-sass",
     color: "#cd6799",
   },
   {
     id: "JavaScript",
-    // icon: "fa-brands fa-square-js",
     color: "#f7df1e",
   },
   {
@@ -45,62 +40,83 @@ export const technologies = [
   },
   {
     id: "React",
-    // icon: "fa-brands fa-react",
     color: "#61dafb",
   },
   {
-    // id: "VisualStudioCode",
     id: "VSCode",
     color: "#46adf3",
   },
   {
     id: "Git",
-    // icon: "fa-brands fa-git-alt",
     color: "#f05033",
   },
   {
     id: "Figma",
   },
   {
-    // id: "AdobePhotoshop",
     id: "Photoshop",
     color: "#31a8ff",
   },
   {
-    // id: "AdobeIllustrator",
-    // id: "AdobeIllustrator",
     id: "Illustrator",
     color: "#ff9a00",
   },
   {
-    // id: "AdobePremierePro",
     id: "PremierePro",
     color: "#9999ff",
   },
   {
-    // id: "AdobeAfterEffects",
     id: "AfterEffects",
     color: "#9999ff",
   },
   {
     id: "Github",
-    // icon: "fa-brands fa-github",
     // color: "#000000",
   },
   {
     id: "Windows",
-    // icon: "fa-brands fa-windows",
     color: "#00aeee",
   },
   {
     id: "Linux",
-    // icon: "fa-brands fa-linux",
     // color: "#000000",
   },
   {
     id: "Ubuntu/Linux",
-    // icon: "fa-brands fa-ubuntu",
     color: "#e65320",
+  },
+  /* ---------------------------------- TEMP ---------------------------------- */
+  {
+    id: "Bootstrap",
+    color: "#8b13fd",
+  },
+  {
+    id: "Express",
+    // color: "#000000",
+  },
+  {
+    id: "MongoDB",
+    color: "#00684a",
+  },
+  {
+    id: "Flask",
+    // color: "#000000",
+  },
+  {
+    id: "Docker",
+    color: "#2496ed",
+  },
+  {
+    id: "Dart",
+    color: "#055a9d",
+  },
+  {
+    id: "Flutter",
+    color: "#5ec8f7",
+  },
+  {
+    id: "Firebase",
+    color: "#ffcc32",
   },
 ];
 
@@ -151,4 +167,84 @@ export const projectData = [
   //   code: "",
   //   demo: "",
   // },
+];
+
+export const schoolProjectData = [
+  // {
+  //   id: "project",
+  //   image: "",
+  //   name: "",
+  //   description: "",
+  //   technologies: [
+  //     {
+  //       id: "",
+  //     },
+  //   ],
+  //   code: "",
+  //   demo: "",
+  // },
+  {
+    id: "project3",
+    // image: "https://cdn.shopify.com/s/files/1/2420/2037/files/Kep1er_4th_Mini_Album_-_LOVESTRUCK_INFO_STRIP_NO_POSTER.png?v=1679585478",
+    // image: "/projects/personal_website_long.webp",
+    name: "Archived",
+    description: "A shopping web app for secondhand books.",
+    technologies: [
+      {
+        id: "Bootstrap",
+      },
+      {
+        id: "Express",
+      },
+      {
+        id: "MongoDB",
+      },
+    ],
+    code: "https://github.com/Archived-Books/Archived-goorm",
+    // demo: "",
+  },
+  {
+    id: "project2",
+    // image: "https://cdn.shopify.com/s/files/1/2420/2037/files/Kep1er_4th_Mini_Album_-_LOVESTRUCK_INFO_STRIP_NO_POSTER.png?v=1679585478",
+    name: "quickboard",
+    description: "A simple web app for creating lists.",
+    technologies: [
+      {
+        id: "HTML",
+      },
+      {
+        id: "CSS",
+      },
+      {
+        id: "Python",
+      },
+      {
+        id: "Flask",
+      },
+      {
+        id: "Docker",
+      },
+    ],
+    code: "https://github.com/antonio-lopez/cpsc-349-project-one",
+    // demo: "",
+  },
+  {
+    id: "project1",
+    // image: "https://cdn.shopify.com/s/files/1/2420/2037/files/Kep1er_4th_Mini_Album_-_LOVESTRUCK_INFO_STRIP_NO_POSTER.png?v=1679585478",
+    name: "PLANiT",
+    description: "A mobile app for managing tasks and tracking assignments, including other features such as weather updates, study timer, and file uploads.",
+    technologies: [
+      {
+        id: "Dart",
+      },
+      {
+        id: "Flutter",
+      },
+      {
+        id: "Firebase",
+      },
+    ],
+    code: "https://github.com/PLANiT-Scheduler/PLANiT",
+    // demo: "",
+  },
 ];

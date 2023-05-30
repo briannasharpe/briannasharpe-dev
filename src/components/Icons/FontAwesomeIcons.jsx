@@ -14,6 +14,8 @@ import {
   faCode,
   faMoon,
   faSun,
+  faWrench,
+  faGraduationCap,
 } from '@fortawesome/free-solid-svg-icons';
 
 import { 
@@ -28,6 +30,8 @@ import {
   faWindows,
   faLinux,
   faUbuntu,
+  faBootstrap,
+  faDocker,
 } from '@fortawesome/free-brands-svg-icons';
 
 function FontAwesomeIcons({ icon }) {
@@ -60,6 +64,10 @@ function FontAwesomeIcons({ icon }) {
         return <FontAwesomeIcon icon={faMoon} />;
       case 'sun':
         return <FontAwesomeIcon icon={faSun} />;
+      case 'wrench':
+        return <FontAwesomeIcon icon={faWrench} />;
+      case 'graduation-cap':
+        return <FontAwesomeIcon icon={faGraduationCap} />;
       /* --------------------------------- BRANDS --------------------------------- */
       case 'github':
       case 'Github':
@@ -84,6 +92,11 @@ function FontAwesomeIcons({ icon }) {
         return <FontAwesomeIcon icon={faLinux} />
       case 'Ubuntu/Linux':
         return <FontAwesomeIcon icon={faUbuntu} />
+      /* ---------------------------------- TEMP ---------------------------------- */
+      case 'Bootstrap':
+        return <FontAwesomeIcon icon={faBootstrap} />
+      case 'Docker':
+        return <FontAwesomeIcon icon={faDocker} />
     }
   }
 

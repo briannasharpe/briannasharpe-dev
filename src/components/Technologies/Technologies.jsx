@@ -45,11 +45,10 @@ function Technologies({ techArray, size = '1.2rem' }) {
       case 'Windows':
       case 'Linux':
       case 'Ubuntu/Linux':
+      /* ---------------------------------- TEMP ---------------------------------- */
+      case 'Bootstrap':
+      case 'Docker':
         return <FontAwesomeIcons icon={tech.id} />
-      // case 'AdobeAfterEffects':
-      // case 'AdobeIllustrator':
-      // case 'AdobePhotoshop':
-      // case 'AdobePremierePro':
       case 'AfterEffects':
       case 'Illustrator':
       case 'Photoshop':
@@ -57,7 +56,13 @@ function Technologies({ techArray, size = '1.2rem' }) {
       case 'Figma':
       case 'Python':
       case 'VSCode':
-      // case 'VisualStudioCode':
+      /* ---------------------------------- TEMP ---------------------------------- */
+      case 'Express':
+      case 'MongoDB':
+      case 'Flask':
+      case 'Dart':
+      case 'Flutter':
+      case 'Firebase':
         return <WebIcons icon={tech.id} />
     }
   }

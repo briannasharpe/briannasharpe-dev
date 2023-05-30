@@ -7,17 +7,21 @@
     display: inline-flex;
     flex-wrap: wrap;
     gap: 1rem;
+    align-items: center;
 
     li {
-      // display: inline-flex;
+      img {
+        display: block;
+      }
+
+      span {
+        font-size: var.$default-font-size;
+        font-weight: 600;
+        display: table-cell;
+        height: 2.5rem;
+        vertical-align: middle;
+        overflow-wrap: anywhere;
+      }
     }
-  }
-  
-  span {
-    font-size: var.$default-font-size;
-    position: relative;
-    bottom: 10%;
-    font-weight: 600;
-    overflow-wrap: anywhere;
   }
 }

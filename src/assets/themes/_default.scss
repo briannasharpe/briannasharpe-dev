@@ -15,9 +15,9 @@
 // @include theme('dark', colors.$dark-background, colors.$dark-background-accent, colors.$dark-highlight, colors.$dark-primary-text, colors.$dark-secondary-text);
 
 @mixin theme($name, $background, $background-accent, $highlight, $primary-text, $secondary-text) {
-  .#{$name} {
-    color: $primary-text;
-    background-color: $background;
+    .#{$name} {
+      color: $primary-text;
+      background-color: $background;
 
     /* -------------------------------------------------------------------------- */
     /*                                   NAVBAR                                   */
@@ -184,10 +184,10 @@
         @include container-header;
       }
       
-      .projects-content {
-        @include gap;
-        flex-direction: column;
-      }
+      // .projects-content {
+      //   @include gap;
+      //   flex-direction: column;
+      // }
     }
     /* -------------------------------- PROJECTS -------------------------------- */
     

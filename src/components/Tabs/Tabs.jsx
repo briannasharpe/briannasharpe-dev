@@ -5,25 +5,11 @@ import FontAwesomeIcons from '../Icons/FontAwesomeIcons';
 import classes from './Tabs.module.scss';
 
 function Tabs({ contentArray, currentTheme }) {
-  /* ------------------------------- TAB TOGGLE ------------------------------- */
   const [toggle, setToggle] = useState(1);
 
   const updateToggle = (tabNum) => {
     setToggle(tabNum)
   }
-  /* -------------------------------------------------------------------------- */
-
-
-  /* -------------------------------- GET ICON -------------------------------- */
-  const getIcon = (tab) => {
-    switch(tab.title) {
-      case 'About':
-        return <FontAwesomeIcons icon="user-pen" />;
-      case 'Tech':
-        return <FontAwesomeIcons icon="code" />;
-      }
-  }
-  /* -------------------------------------------------------------------------- */
 
   return(
     <>
@@ -37,7 +23,7 @@ function Tabs({ contentArray, currentTheme }) {
                 onClick={() => updateToggle(tab.id)}
               >
                 <span>{tab.title}</span>
-                {getIcon(tab)}
+                <FontAwesomeIcons icon={tab.icon}/>
               </li>
             ))}
           </ul>

@@ -22,16 +22,16 @@ $subtext-font-size: calc($default-font-size - 0.2rem);
 /* -------------------------------------------------------------------------- */
 /*                                 ANIMATIONS                                 */
 /* -------------------------------------------------------------------------- */
-// @-webkit-keyframes pop {
-//   50% {
-//     -webkit-transform: scale(1.1);
-//     transform: scale(1.1);
-//   }
-// }
+@-webkit-keyframes pop {
+  50% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
 
-// @keyframes pop {
-//   50% {
-//     -webkit-transform: scale(1.1);
-//     transform: scale(1.1);
-//   }
-// }
+@keyframes pop {
+  50% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}

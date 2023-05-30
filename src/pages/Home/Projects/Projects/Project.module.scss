@@ -1,6 +1,6 @@
-@use '../../../assets/abstracts/variables' as var;
-@use '../../../assets/abstracts/colors' as colors;
-@use '../../../assets/abstracts/mixins' as *;
+@use '../../../../assets/abstracts/variables' as var;
+@use '../../../../assets/abstracts/colors' as colors;
+@use '../../../../assets/abstracts/mixins' as *;
 
 @mixin theme($name, $background, $background-accent, $highlight, $primary-text, $secondary-text) {
   .#{$name} {
@@ -12,6 +12,7 @@
       background-color: $highlight;
       border-radius: var.$rounded;
       @include drop-shadow($background-accent);
+      justify-content: center; // no img
     
       .project-image {
         display: flex;
@@ -39,6 +40,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         flex-basis: 50%;
         text-align: center;
         padding: 0 1rem;
@@ -50,8 +52,13 @@
 
       .project-tech-container {
         padding-top: 1rem;
+
+        ul {
+          display: flex;
+          justify-content: center;
+        }
       }
-      
+
       .project-button-container {
         display: flex;
         justify-content: center;

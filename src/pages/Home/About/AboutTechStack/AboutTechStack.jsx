@@ -1,5 +1,5 @@
-import Technologies from '../../../components/Technologies/Technologies';
-import Squares from '../../../components/Squares/Squares';
+import Technologies from '../../../../components/Technologies/Technologies';
+import Squares from '../../../../components/Squares/Squares';
 
 import classes from './AboutTechStack.module.scss';
 

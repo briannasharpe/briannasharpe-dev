@@ -1,8 +1,6 @@
 @use '../abstracts/variables' as var;
 @use '../abstracts/colors' as colors;
 @use '../abstracts/mixins' as *;
-// @use '../themes/light' as *;
-// @use '../themes/dark' as *;
 @use '../themes/default' as *;
 
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&display=swap');
@@ -39,16 +37,16 @@ a {
 
 /* Track */
 // ::-webkit-scrollbar-track {
-  //   // background: colors.$light-background;
-  // }
-  
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: colors.$red-accent;
-    border-radius: var.$rounded;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
+//   background: $background;
+// }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: colors.$red-accent;
+  border-radius: var.$rounded;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
   background: colors.$red-accent-hover;
 }

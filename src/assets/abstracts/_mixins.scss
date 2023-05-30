@@ -54,12 +54,12 @@
     padding-bottom: 1rem;
   }
   
-  @media (max-width: 64em) {
-    h1 {
-      // padding: 0 2rem;
-      // padding-bottom: 1rem;
-    }
-  }
+  // @media (max-width: 64em) {
+  //   h1 {
+  //     // padding: 0 2rem;
+  //     // padding-bottom: 1rem;
+  //   }
+  // }
 }
 
 /* ---------------------------------- MISC ---------------------------------- */
@@ -85,7 +85,7 @@
   &:hover {
     color: colors.$white;
     background-color: colors.$red-accent-hover;
-    // animation: pop 0.5s ease;
+    animation: pop 0.5s ease;
   }
   &:active {
     background-color: colors.$red-accent-hover;
