@@ -3,6 +3,7 @@ Created with **React** and **SASS**. View it here: [briannasharpe.dev](https://b
 
 
 ## Changes
+- changed download link
 
 
 ## To-do:

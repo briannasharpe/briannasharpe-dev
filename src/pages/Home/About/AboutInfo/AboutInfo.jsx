@@ -8,7 +8,7 @@ function AboutInfo() {
       {/* <p></p> */}
       <div className="about-links">
         <Button 
-          link="https://github.com/briannasharpe/briannasharpe-dev/tree/main/public/files/Brianna_Sharpe_Resume.pdf"
+          link="https://briannasharpe.github.io/files/Brianna_Sharpe_Resume.pdf"
           text="Resume"
           title="resume download link"
           icon="download"
