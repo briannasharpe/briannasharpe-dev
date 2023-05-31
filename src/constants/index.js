@@ -278,6 +278,6 @@ export const wipProjectData = [
       },
     ],
     code: "https://github.com/briannasharpe/ecommerce-website",
-    demo: "https://ecommerce-website-one-liart.vercel.app/",
+    demo: "https://ecommerce-website-demo.vercel.app/",
   },
 ];
