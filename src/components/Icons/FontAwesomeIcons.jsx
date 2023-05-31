@@ -16,6 +16,7 @@ import {
   faSun,
   faWrench,
   faGraduationCap,
+  faThumbtack,
 } from '@fortawesome/free-solid-svg-icons';
 
 import { 
@@ -68,6 +69,8 @@ function FontAwesomeIcons({ icon }) {
         return <FontAwesomeIcon icon={faWrench} />;
       case 'graduation-cap':
         return <FontAwesomeIcon icon={faGraduationCap} />;
+      case 'thumbtack':
+        return <FontAwesomeIcon icon={faThumbtack} />;
       /* --------------------------------- BRANDS --------------------------------- */
       case 'github':
       case 'Github':

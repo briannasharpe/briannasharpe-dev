@@ -248,3 +248,36 @@ export const schoolProjectData = [
     // demo: "",
   },
 ];
+
+export const wipProjectData = [
+  // {
+  //   id: "project",
+  //   image: "",
+  //   name: "",
+  //   description: "",
+  //   technologies: [
+  //     {
+  //       id: "",
+  //     },
+  //   ],
+  //   code: "",
+  //   demo: "",
+  // },
+  {
+    id: "project1",
+    // image: "https://cdn.shopify.com/s/files/1/2420/2037/files/Kep1er_4th_Mini_Album_-_LOVESTRUCK_INFO_STRIP_NO_POSTER.png?v=1679585478",
+    // image: "/projects/personal_website_long.webp",
+    name: "Ecommerce Website",
+    description: "A shopping website!",
+    technologies: [
+      {
+        id: "Sass",
+      },
+      {
+        id: "React",
+      },
+    ],
+    code: "https://github.com/briannasharpe/ecommerce-website",
+    demo: "https://ecommerce-website-one-liart.vercel.app/",
+  },
+];

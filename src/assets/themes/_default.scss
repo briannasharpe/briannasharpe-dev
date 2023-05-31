@@ -184,10 +184,11 @@
         @include container-header;
       }
       
-      // .projects-content {
-      //   @include gap;
-      //   flex-direction: column;
-      // }
+      .projects-content {
+        // @include gap;
+        // flex-direction: column;
+        width: 100%;
+      }
     }
     /* -------------------------------- PROJECTS -------------------------------- */
     

@@ -1,6 +1,7 @@
 import Tabs from '../../components/Tabs/Tabs';
 import RecentProjects from './Projects/RecentProjects/RecentProjects';
 import SchoolProjects from './Projects/SchoolProjects/SchoolProjects';
+import WIPProjects from './Projects/WIPProjects/WIPProjects';
 
 function Projects({ currentTheme }) {
   let tabArray = [
@@ -13,7 +14,7 @@ function Projects({ currentTheme }) {
     {
       id: 1,
       title: "Recent",
-      icon: "wrench",
+      icon: "thumbtack",
       content: <RecentProjects currentTheme={currentTheme} />,
     },
     {
@@ -21,6 +22,12 @@ function Projects({ currentTheme }) {
       title: "School",
       icon: "graduation-cap",
       content: <SchoolProjects currentTheme={currentTheme} />,
+    },
+    {
+      id: 3,
+      title: "WIP",
+      icon: "wrench",
+      content: <WIPProjects currentTheme={currentTheme} />,
     },
   ]
 

@@ -10,7 +10,7 @@
         display: flex;
         flex-wrap: wrap;
       }
-      
+
       .tabs-heading {
         // justify-content: center;
         
@@ -45,6 +45,12 @@
           
           &:hover {
             color: colors.$red-accent;
+          }
+
+          &:first-child {
+            &:before {
+              // border-radius: var.$rounded;
+            }
           }
         }
     
