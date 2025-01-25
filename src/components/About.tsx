@@ -9,11 +9,11 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip"
-import {
-  Avatar,
-  AvatarFallback,
-  AvatarImage,
-} from "@/components/ui/avatar"
+// import {
+//   Avatar,
+//   AvatarFallback,
+//   AvatarImage,
+// } from "@/components/ui/avatar"
 import { toast } from "sonner"
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -54,15 +54,16 @@ import {
 
 export function About() {
   const copyEmail = () => {
-    navigator.clipboard.writeText("hello@briannasharpe.dev"),
-    toast("Copied email to clipboard", {
-      // description: "",
-      // action: {
-        // label: "",
-        // label: (<FontAwesomeIcon icon={faXmark} />),
-        // onClick: () => console.log(""),
-      // },
-    })
+    return (
+      navigator.clipboard.writeText("hello@briannasharpe.dev"),
+      toast("Copied email to clipboard", {
+        // description: "",
+        // action: {
+        //   label: "",
+        //   label: (<FontAwesomeIcon icon={faXmark} />),
+        //   onClick: () => console.log(""),
+        // },
+    }))
   }
 
   return (

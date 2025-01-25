@@ -1,5 +1,5 @@
-import { Project } from "@/components/Project";
-import { projectInfo } from "@/data/projects";
+// import { Project } from "@/components/Project";
+// import { projectInfo } from "@/data/projects";
 
 function Projects() {
 
@@ -8,7 +8,7 @@ function Projects() {
       <div className="text-4xl font-bold pb-4">
         <h1>projects</h1>
       </div>
-      <p>to be updated soon!</p>
+      <p>To be updated soon!</p>
       {/* {projectInfo.map((project, index) => (
         <Project 
           key={index}

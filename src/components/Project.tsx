@@ -14,7 +14,12 @@ import {
   faGithub,
 } from '@fortawesome/free-brands-svg-icons';
 
-export function Project({ projectTitle, projectDescription, projectTech, projectLink }) {
+export function Project( 
+  {projectTitle}:{projectTitle: string}, 
+  {projectDescription}:{projectDescription: string}, 
+  {projectTech}:{projectTech: string[]}, 
+  {projectLink}:{projectLink:string} 
+) {
 
   return (
     <div className="pb-4">
